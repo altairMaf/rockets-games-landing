@@ -1,0 +1,5 @@
+/* Faixa decorativa entre duas seções. Não modifica conteúdo ou rolagem. */
+.rg-divisor{position:relative;display:block;height:0;min-height:0;width:100%;margin:0;padding:0;z-index:5;pointer-events:none;overflow:visible;flex:none}
+.rg-divisor picture{position:absolute;left:0;right:0;top:0;display:block;transform:translateY(-50%);height:clamp(90px,10.5vw,168px)}
+.rg-divisor img{display:block;width:100%;height:100%;max-width:none;object-fit:fill;user-select:none}
+@media(max-width:700px){.rg-divisor picture{height:92px}}

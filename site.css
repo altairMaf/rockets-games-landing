@@ -1,0 +1,172 @@
+:root{--ink:#111018;--lime:#9bff00;--yellow:#ffe600;--cyan:#05bded;--red:#ff3038;--panel:#191820}
+*{box-sizing:border-box}
+html{scroll-snap-type:y proximity;scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:#fff;font-family:Montserrat,Arial,sans-serif;font-weight:500;line-height:1.6}
+body.locked{overflow:hidden}
+[hidden]{display:none!important}
+img{max-width:100%}
+a{color:inherit}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.sr-only:focus{clip-path:none;width:auto;height:auto;z-index:99999;background:var(--yellow);color:var(--ink);padding:10px}
+button{font:inherit}
+button:focus-visible,a:focus-visible{outline:4px solid var(--cyan);outline-offset:6px}
+
+/* botão de música */
+.som-toggle{position:fixed;top:14px;right:14px;z-index:2147483001;display:inline-flex;align-items:center;gap:8px;background:var(--yellow);color:var(--ink);border:3px solid var(--ink);border-radius:10px;box-shadow:3px 4px 0 var(--ink);font-weight:800;font-size:13px;padding:8px 14px;cursor:pointer;transition:transform .2s}
+.som-toggle:hover{transform:translateY(-3px) rotate(-2deg)}
+.som-toggle .corte{display:none}
+.som-toggle[aria-pressed=false]{background:#d9d6e0}
+.som-toggle[aria-pressed=false] .corte{display:inline}
+.som-toggle[aria-pressed=false] .ondas{display:none}
+.som-toggle[aria-pressed=true] .ondas{animation:ondas 1.2s ease-in-out infinite}
+@keyframes ondas{50%{opacity:.35}}
+
+/* botões com arte do kit */
+.rotulo{position:absolute;inset:14.2% 7% 27.4% 4.75%;display:flex;align-items:center;justify-content:center;text-align:center}
+.btn-img{border:0;box-shadow:none;border-radius:0;background:center/100% 100% no-repeat;aspect-ratio:2117/743;width:min(280px,78vw);display:inline-grid;place-items:center;padding:0;min-height:0;position:relative;font-weight:900;font-size:clamp(14px,1.5vw,18px);letter-spacing:.5px;text-decoration:none;text-align:center;line-height:1.15;color:var(--ink);filter:drop-shadow(0 6px 0 #11101833)}
+.btn-img:hover:not(:disabled){box-shadow:none;filter:drop-shadow(0 10px 0 #11101844)}
+.btn-img:active:not(:disabled){box-shadow:none}
+.btn-amarelo{background-image:url(P0/02-botoes/botao-amarelo.png)}
+.btn-azul{background-image:url(P0/02-botoes/botao-azul.png);color:#fff;text-shadow:2px 2px 0 var(--ink)}
+.btn-vermelho{background-image:url(P0/02-botoes/botao-vermelho.png);color:#fff;text-shadow:2px 2px 0 var(--ink)}
+.btn-img:disabled{filter:grayscale(.5)}
+#conheca{width:min(320px,80vw);font-size:clamp(18px,2.2vw,26px);animation:pulso 2.4s ease-in-out infinite;position:relative;overflow:visible}
+#conheca::after{content:"";position:absolute;inset:8% 6% 14%;border-radius:18px;background:linear-gradient(105deg,transparent 35%,#fff9 50%,transparent 65%);background-size:250% 100%;animation:brilho 3s ease-in-out infinite;pointer-events:none;mix-blend-mode:overlay}
+@keyframes pulso{0%,100%{scale:1}50%{scale:1.06}}
+@keyframes brilho{0%{background-position:150% 0}60%,100%{background-position:-60% 0}}
+
+/* 1) abertura */
+#abertura .rg-coins{z-index:0;opacity:1}
+#abertura{position:fixed;inset:0;z-index:50;background:var(--lime) url(P0/01-backgrounds/hero-lima.png) center/cover;display:grid;place-items:center;overflow:hidden}
+.abertura-centro{position:relative;z-index:3;text-align:center;width:min(100%,1100px);padding:20px}
+.apoio{display:inline-block;background:var(--lime);font-weight:800;letter-spacing:3px;font-size:clamp(10px,1.2vw,14px);text-transform:uppercase;padding:8px 14px;margin:0 0 4px}
+.logo-stage{margin:0 auto 14px;width:min(92vw,900px)}
+.logo-h1{margin:0;line-height:0}
+#logo{width:100%;height:auto;display:block}
+#cena-intro{padding:0 16px 20px 0}
+.f{position:absolute;z-index:1;pointer-events:none}
+.f-controle{width:clamp(90px,17vw,270px);left:2%;bottom:4%}
+.f-trofeu{width:clamp(60px,9vw,150px);left:3%;top:24%}
+.f-raio{width:clamp(50px,8vw,130px);right:5%;top:6%}
+.f-arcade{width:clamp(80px,14vw,220px);right:3%;bottom:4%}
+.m{width:clamp(28px,4vw,64px)}
+.m1{left:5%;top:7%}.m2{left:17%;top:46%;width:clamp(22px,3vw,48px)}.m3{left:27%;top:6%;width:clamp(22px,3vw,48px)}
+.m4{left:24%;bottom:5%}.m5{right:25%;top:8%;width:clamp(22px,3vw,48px)}.m6{right:17%;top:42%}
+.m7{right:6%;top:30%;width:clamp(22px,3vw,48px)}.m8{right:26%;bottom:5%;width:clamp(22px,3vw,48px)}.m9{left:12%;top:68%;width:clamp(20px,2.6vw,42px)}
+#abertura.saindo{pointer-events:none}
+
+/* seções */
+.screen{min-height:100svh;scroll-snap-align:start;position:relative;display:grid;place-items:center;padding:clamp(100px,14vh,150px) 5%;overflow:hidden}
+.screen__in{width:min(100%,1180px);position:relative;z-index:1;transform-origin:50% 50%;will-change:transform,opacity}
+.eyebrow{font-weight:800;letter-spacing:3px;font-size:12px;color:var(--lime);margin:0 0 8px}
+.eyebrow.claro{color:var(--ink);background:var(--lime);display:inline-block;padding:6px 12px}
+h2{font-weight:900;font-size:clamp(28px,4.4vw,56px);line-height:1.05;letter-spacing:-1.5px;margin:0 0 18px}
+h2 em{font-style:normal;color:var(--yellow);-webkit-text-stroke:1px var(--ink);text-shadow:3px 3px 0 var(--ink)}
+.painel{border:4px solid var(--yellow);border-radius:20px;padding:clamp(22px,3.2vw,44px);box-shadow:9px 10px 0 var(--cyan),9px 10px 0 4px var(--ink);position:relative}
+.painel-escuro{background:#191820f0}
+.painel p{font-size:clamp(14px,1.25vw,17px);margin:0 0 14px;color:#ece9f4}
+.painel.largo{max-width:1100px;margin:0 auto}
+.painel .go,.painel .btn-img{margin-top:10px}
+
+/* 2) intro */
+.s-intro{background:linear-gradient(90deg,#05bdedf0,#05bded99 55%,#05bded33),url(P0/01-backgrounds/promocao-azul.png) center/cover}
+.intro-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(20px,4vw,60px);align-items:center}
+.intro-arte{position:relative;aspect-ratio:1/1;min-height:300px}
+.intro-arte .a1{position:absolute;left:0;top:10%;width:78%}
+.intro-arte .a2{position:absolute;width:17%;top:2%;right:2%}
+.intro-arte .a3{position:absolute;width:11%;bottom:10%;right:6%}
+.chips{list-style:none;padding:0;margin:0 0 14px;display:flex;flex-wrap:wrap;gap:10px}
+.chips li{display:inline-flex;align-items:center;gap:8px;background:var(--ink);border:2px solid var(--yellow);border-radius:999px;padding:5px 14px 5px 6px;font-weight:800;font-size:13px;transition:transform .25s cubic-bezier(.3,1.6,.5,1),background .2s,color .2s;cursor:default}
+.chips li img{width:26px;height:26px}
+.chips li:hover{transform:translateY(-5px) rotate(-3deg) scale(1.06);background:var(--yellow);color:var(--ink)}
+.chips.plat li{padding:5px 14px;border-color:var(--ink);color:#fff;box-shadow:3px 3px 0 var(--ink)}
+.chips.plat .p-xbox{background:#1fa21f}.chips.plat .p-ps{background:#1b6fe0}.chips.plat .p-nin{background:var(--red)}
+.chips.plat li:hover{color:#fff;filter:brightness(1.15)}
+
+/* 3) mercado */
+.s-mercado{background:var(--ink) url(P0/01-backgrounds/catalogo-escuro.png) center/cover}
+.s-mercado .screen__in{position:static;display:grid;place-items:center}
+.s-mercado .painel{position:relative;z-index:1}
+.s-mercado .screen__in{position:relative;z-index:1}
+.duas{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:center}
+.arte-midias{position:relative}
+.criterios{list-style:none;margin:8px 0 18px;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.criterios li{background:#26242f;border:2px solid #45424e;border-radius:14px;padding:14px 12px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:4px;transition:transform .3s cubic-bezier(.3,1.5,.5,1),border-color .2s,background .2s}
+.criterios li img{width:42px;height:42px;transition:transform .5s}
+.criterios li b{color:var(--yellow);font-size:15px}
+.criterios li span{font-size:12px;color:#cfcad9;line-height:1.35}
+.criterios li:hover{transform:translateY(-8px) rotate(-1.5deg);border-color:var(--cyan);background:#2f2c3a}
+.criterios li:hover img{transform:rotate(360deg) scale(1.15)}
+.destaque{margin:6px 0 12px!important;text-align:center}
+.destaque span{display:inline-block;background:var(--yellow);color:var(--ink);font-weight:900;font-size:clamp(16px,2vw,24px);padding:8px 22px;border:3px solid var(--ink);transform:rotate(-1.5deg);box-shadow:5px 5px 0 var(--red)}
+.nota{font-size:12px!important;color:#b9b4c6!important;border-left:4px solid var(--cyan);padding-left:12px}
+
+/* 4) motivos */
+.s-motivos{background:var(--lime) url(P0/01-backgrounds/hero-lima.png) center/cover}
+.cab{text-align:center;margin-bottom:clamp(24px,5vh,50px)}
+.cab h2{color:#fff;-webkit-text-stroke:2px var(--ink);paint-order:stroke fill;text-shadow:4px 4px 0 var(--ink)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,3vw,40px);align-items:start;max-width:1050px;margin:0 auto}
+.card{background:url(P0/04-paineis/painel-card.png) center/100% 100% no-repeat;aspect-ratio:1086/1448;padding:19% 15% 15%;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;filter:drop-shadow(0 10px 0 #1110182a)}
+.card .num{position:absolute;top:-2.5%;left:50%;translate:-50% 0;width:23%;filter:drop-shadow(0 3px 0 #11101866)}
+.card .ico{width:clamp(44px,18%,70px);margin-top:12%}
+.card h3{margin:2px 0 0;color:var(--yellow);font-size:clamp(15px,1.7vw,22px);line-height:1.15;font-weight:900}
+.card p{margin:0;font-size:clamp(12px,1.05vw,14px);color:#e6e2ee;line-height:1.5}
+.rg-card:hover,.rg-card:focus-within{animation:bob 1.5s ease-in-out infinite;filter:drop-shadow(0 18px 0 #05bded55)}
+@keyframes bob{0%,100%{transform:translateY(-14px) rotate(-1.2deg) scale(1.025)}50%{transform:translateY(-24px) rotate(1deg) scale(1.035)}}
+
+/* 5) contato */
+.s-contato{background:var(--lime) url(P0/01-backgrounds/hero-lima.png) center/cover}
+.contato-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(20px,4vw,60px);align-items:center}
+.contatos{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:12px}
+.contatos li{display:flex;align-items:center;gap:12px;font-size:15px;transition:transform .25s}
+.contatos li:hover{transform:translateX(8px)}
+.contatos img{width:44px;height:44px;flex:none}
+.contatos b{color:var(--yellow);margin-right:6px}
+.contatos a{text-decoration:none}
+.contatos a:hover{text-decoration:underline;text-decoration-color:var(--cyan);text-underline-offset:4px}
+.pend{color:#b9b4c6;font-style:normal}
+.foguete-box{display:grid;justify-items:center;gap:12px;text-align:center}
+.foguete-img{width:min(70%,320px);filter:drop-shadow(0 10px 0 #11101833);animation:rg-drift 5s ease-in-out infinite}
+#foguete{width:min(300px,80vw);font-size:clamp(16px,1.9vw,22px)}
+.status{min-height:1.6em;margin:0;font-weight:800;background:var(--ink);color:var(--yellow);padding:4px 14px;border-radius:999px;font-size:13px}
+.status:empty{visibility:hidden}
+.rodape small{display:block;font-weight:700;font-size:12px;margin-top:4px;opacity:.85}
+.rodape{margin-top:clamp(28px,6vh,60px);text-align:center;font-weight:800;font-size:13px;color:var(--ink);background:#9bffa0cc;padding:10px;border-radius:8px}
+
+/* navegação por pontos */
+.dots{position:fixed;right:14px;top:50%;translate:0 -50%;z-index:60;display:grid;gap:12px}
+.dots a{width:14px;height:14px;border-radius:50%;background:var(--ink);border:3px solid var(--yellow);display:block;transition:transform .2s,background .2s}
+.dots a:hover,.dots a.on{background:var(--yellow);transform:scale(1.5)}
+
+/* sem movimento */
+html.no-anim,html.no-anim *{scroll-behavior:auto!important}
+html.no-anim #conheca,html.no-anim #conheca::after,html.no-anim .foguete-img{animation:none}
+html.no-anim .rg-card:hover{animation:none}
+
+@media(max-width:860px){
+  .intro-grid,.contato-grid,.duas{grid-template-columns:1fr}
+  .intro-arte{max-width:380px;margin:0 auto;min-height:0}
+  .criterios{grid-template-columns:repeat(2,1fr)}
+  .cards{grid-template-columns:1fr;max-width:340px}
+  .dots{display:none}
+  .f-explosao,.f-arcade{opacity:.7}
+}
+@media(prefers-reduced-motion:reduce){html:not(.rg-explicit-motion) #conheca,html:not(.rg-explicit-motion) #conheca::after,html:not(.rg-explicit-motion) .foguete-img{animation:none}html{scroll-behavior:auto}}
+
+/* divisórias animadas */
+#site{overflow-x:clip}
+.rg-divisor picture{will-change:translate}
+.rg-divisor img{width:116%;margin-left:-8%;max-width:none;animation:div-sway 7s ease-in-out infinite alternate}
+@keyframes div-sway{from{translate:-2.5% 0;filter:brightness(1)}to{translate:2.5% 0;filter:brightness(1.12)}}
+html.no-anim .rg-divisor img{animation:none}
+@media(max-width:700px){.f-explosao{display:none}}
+
+/* foguetes de fundo na abertura */
+.bg-rocket{position:absolute;left:0;top:var(--y);width:var(--w);z-index:0;pointer-events:none;animation:bg-voo-d var(--t) linear forwards}
+.bg-rocket img{display:block;width:100%;opacity:.9;animation:rg-drift 3.2s ease-in-out infinite}
+.bg-rocket.volta{left:auto;right:0;animation-name:bg-voo-e}
+.bg-rocket.volta img{scale:-1 1}
+@keyframes bg-voo-d{from{transform:translateX(-130%)}to{transform:translateX(calc(100vw + 30%))}}
+@keyframes bg-voo-e{from{transform:translateX(130%)}to{transform:translateX(calc(-100vw - 30%))}}
+
+#foguete{padding:5% 7% 9.6% 4.75%}

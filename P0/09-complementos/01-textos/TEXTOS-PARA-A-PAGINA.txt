@@ -1,0 +1,84 @@
+
+
+ROCKET'S GAMES — TEXTOS PARA A LANDING PAGE
+Texto original baseado nas informações fornecidas.
+
+
+1. ABERTURA
+
+Rocket's Games
+Sua próxima fase começa aqui.
+
+Botão: Conheça-nos
+Controle auxiliar: Pular animação
+
+2. INTRODUCAO
+
+SEU UNIVERSO GAMER
+
+Dê o próximo play. Do seu jeito.
+
+Na Rocket's Games, sua próxima aventura pode começar com uma mídia física, um novo console ou aquele periférico que faltava no setup. Trabalhamos com produtos novos e usados para você explorar possibilidades e encontrar o que combina com a sua forma de jogar.
+
+Xbox, PS4, PS5 e Nintendo Switch: diferentes plataformas, a mesma vontade de jogar. Consulte os produtos disponíveis e descubra seu próximo favorito.
+
+Categorias: Mídias físicas · Consoles · Periféricos · Novos e usados
+Plataformas: Xbox · PS4 · PS5 · Nintendo Switch
+
+Botão: Explore as possibilidades
+
+3. MERCADO
+
+O JOGO CONTINUA FORA DA TELA
+
+Mídia física. Diversão que ganha lugar na estante.
+
+No universo da mídia física, discos, cartuchos e caixas também fazem parte da experiência. Para escolher, vale olhar além do título: plataforma, edição, estado de conservação e itens incluídos ajudam a comparar as opções.
+
+Produtos novos e usados ampliam as possibilidades de escolha. Na Rocket's Games, você encontra esse universo ao lado de consoles e periféricos, para pensar no jogo e no setup no mesmo lugar.
+
+Frase de destaque: Mais possibilidades para a sua próxima fase.
+
+Informação de apoio: Antes de comprar, confirme a compatibilidade com seu console, a condição do produto e o que acompanha a edição. Requisitos de instalação, conexão e conteúdos digitais variam por jogo.
+
+Botão: Veja os 3 motivos
+
+4. TRÊS MOTIVOS
+
+ESCOLHA SUA PRÓXIMA FASE
+
+3 motivos para conhecer a Rocket’s
+
+CARD 1 — Seu universo, várias plataformas
+Mídias físicas para Xbox, PS4, PS5 e Nintendo Switch. Um ponto de partida para descobrir o próximo jogo da sua coleção.
+
+CARD 2 — Novos e usados, mais possibilidades
+Explore as duas opções e compare o que faz sentido para você. Consulte a condição, a edição e a disponibilidade de cada produto.
+
+CARD 3 — Do jogo ao setup
+Além das mídias físicas, a Rocket’s Games trabalha com consoles e periféricos. Encontre possibilidades para completar sua experiência.
+
+5. CONTATOS E ENCERRAMENTO
+
+CONTINUE ESSA CONVERSA
+
+Bora para a próxima fase?
+
+Acompanhe a Rocket’s Games nas redes e fique por perto para conhecer os produtos da loja.
+
+WhatsApp: (11) 95555-6666 [FICTÍCIO — NÃO ATIVAR CONTATO]
+Instagram: @pedrao_foguetao
+TikTok: @foguetao_games
+Endereço: [PREENCHER ENDEREÇO REAL]
+Horário: [PREENCHER HORÁRIO REAL]
+E-mail: [OPCIONAL — A INFORMAR]
+
+Botão: Lançar foguete
+Durante o voo: Foguete em voo…
+Após o voo: Missão concluída. Pode lançar de novo!
+
+Rodapé: Rocket's Games — sua próxima fase começa aqui.
+
+OBSERVAÇÕES PARA IMPLEMENTAÇÃO
+Não publicar os campos entre colchetes. Confirmar os perfis sociais antes da publicação. Os cards SVG contêm versões resumidas das descrições acima; o conteúdo completo está também em conteudo.json. Não foram inventadas promessas de menor preço, frete, teste, garantia adicional ou troca.
+O título de cada bloco e todos os textos devem continuar legíveis sem animações. A decoração nunca carrega informação essencial sozinha.

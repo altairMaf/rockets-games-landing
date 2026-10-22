@@ -1,0 +1,92 @@
+[
+  {
+    "arquivo": "COMECE-AQUI.html",
+    "bytes": 2487,
+    "sha256": "EFAB63D0FB523841E049188187F61756164B27FE83F967E2FA189ABA30948D52"
+  },
+  {
+    "arquivo": "06-tipografia/AMOSTRA.html",
+    "bytes": 5149,
+    "sha256": "9A57F614B6F52595FBC386001DEB1A207F63E25C99A95C709128F3CF021C7BA1"
+  },
+  {
+    "arquivo": "06-tipografia/fontes.css",
+    "bytes": 300,
+    "sha256": "34646AB55CB53907418997BD4F47C01BF5D4275D0D7E1A2063FEC95C43175765"
+  },
+  {
+    "arquivo": "06-tipografia/logo-rockets-games.svg",
+    "bytes": 995739,
+    "sha256": "483256FA19783C60CF5EBE8F21C7A39A708C0E1F04461B7B04EC2A879EC9FD9A"
+  },
+  {
+    "arquivo": "06-tipografia/Montserrat-Italic-Variable.ttf",
+    "bytes": 762376,
+    "sha256": "51607F316BC020E59F03CBF51543EECFFBEA501C0B31D73E5B82927C5CCA442C"
+  },
+  {
+    "arquivo": "06-tipografia/Montserrat-Variable.ttf",
+    "bytes": 744936,
+    "sha256": "0F7B311B2F3279E4EEF9B2F968BCDBAB6E28F4DAEB1F049F4F278A902BCD82F7"
+  },
+  {
+    "arquivo": "06-tipografia/OFL.txt",
+    "bytes": 4400,
+    "sha256": "8B7141C03FA4F8D44E6345D5D4931709290F0F67875E452E95AC1FD3A027802E"
+  },
+  {
+    "arquivo": "06-tipografia/origens.json",
+    "bytes": 786,
+    "sha256": "0DE64B534C81B5E41C0D97C04D7F29D166438C9EBD6478DDE6AACCC70A52995C"
+  },
+  {
+    "arquivo": "07-abertura-e-transicao/abertura.css",
+    "bytes": 7029,
+    "sha256": "12CBA2F9902EE0F573272A67DF70E9918F90348FE4138B9EB4CFD1670A3881E9"
+  },
+  {
+    "arquivo": "07-abertura-e-transicao/abertura.js",
+    "bytes": 3083,
+    "sha256": "8E996C280A18F8B70738CAD6267B3CFE2C69E53E888C6FB15B3770BD7E7D8975"
+  },
+  {
+    "arquivo": "07-abertura-e-transicao/DEMO.html",
+    "bytes": 8484,
+    "sha256": "2AB4614D70CA47DC6670B481C97DFD7E356CCD753DD7F71DC783C6DAD27FD866"
+  },
+  {
+    "arquivo": "07-abertura-e-transicao/transicao-chamas.svg",
+    "bytes": 3155,
+    "sha256": "AA10B8CC63E68FBE150C77DB617E71D1D77B03CF5BD3F298BE87E31398632878"
+  },
+  {
+    "arquivo": "08-referencias/01-tipografia-video.url",
+    "bytes": 67,
+    "sha256": "B78B6537A58222CDC1E3A5E760C047F40C213AD46EF4D606AEE854E086857215"
+  },
+  {
+    "arquivo": "08-referencias/02-transicao-video.url",
+    "bytes": 67,
+    "sha256": "82DD6E12FA66BCBB352EAB960A9297678CA242F6B16A2C109747EBE553BB7E33"
+  },
+  {
+    "arquivo": "08-referencias/GUIA-DE-IMPLEMENTACAO.txt",
+    "bytes": 4705,
+    "sha256": "15EADBE85088A4BC66307E4332FF7B0923EAF6A7124D5FF836348D85159203CF"
+  },
+  {
+    "arquivo": "08-referencias/preview-abertura.png",
+    "bytes": 126581,
+    "sha256": "1F905DDB54CA1BCDC7A11CD040F7CEC3CB7EFC7B55063F827DFAA9AAB7580C8A"
+  },
+  {
+    "arquivo": "08-referencias/REFERENCIAS.html",
+    "bytes": 3758,
+    "sha256": "7F09C60D9DEE2C65AC2A01D58DB11FA74D5C59D567F8A718D0B66A8CB0C0CBD3"
+  },
+  {
+    "arquivo": "08-referencias/preview-transicao.png",
+    "bytes": 58583,
+    "sha256": "3CA8F55B4F5A2709AD10D5A505BB5DA2A1AED5A1137576CBAF10001CB266FCF0"
+  }
+]

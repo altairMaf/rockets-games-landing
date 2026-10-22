@@ -1,0 +1,61 @@
+KIT VISUAL — LOJA DE JOGOS / COMICS 3D
+Data: 22/10/2026
+
+Abra GALERIA.html com duplo clique para ver todos os arquivos e uma composição de exemplo.
+O conjunto funciona localmente, sem instalar dependências.
+
+CONTEÚDO
+01-backgrounds: 3 fundos horizontais (1672 × 941).
+02-botoes: 3 botões vazios, amarelo, vermelho e azul (2117 × 743).
+03-elementos: controle, arcade, moeda, raio, explosão e troféu.
+04-paineis: card vertical vazio e faixa promocional vazia.
+05-guia: este guia, prompts e CSS opcional.
+inventario.json: dimensões, tamanho e presença de transparência de cada imagem.
+
+DIREÇÃO VISUAL
+Referência examinada no navegador:
+https://www.youtube.com/shorts/lrhD1xZROjA
+3D TEXT ANIMATION in After Effects — Easy, Beginner Tutorial, eb.studio.
+Inspiração: cores saturadas, verde-limão, contornos pretos grossos,
+camadas extrudadas e explosões de quadrinhos. As imagens são novas;
+não foram extraídos gráficos do vídeo.
+
+Paleta-base:
+Verde-limão #9BFF00
+Amarelo #FFE600
+Vermelho #FF3038
+Azul-ciano #05BDED
+Preto #111018
+São cores de direção artística; luz, sombra e renderização criam variações.
+
+COMPOSIÇÃO SUGERIDA
+Abertura: fundo verde, título curto, controle em destaque, moeda e raio como
+acentos e botão amarelo.
+Catálogo: fundo escuro e painéis de produto; colocar capas e informações por cima.
+Benefícios: troféu, moeda e arcade, com áreas de respiro entre os elementos.
+Promoções: fundo azul, faixa ou explosão com texto curto e botão vermelho.
+Evite colocar todas as peças na mesma seção.
+
+USO DOS ARQUIVOS
+Todas as imagens são PNG raster em resolução original.
+Os 11 arquivos de botões, elementos e painéis têm canal alpha transparente.
+Os três backgrounds são opacos.
+Botões, painéis e explosão não contêm texto. O centro do card é escuro e opaco.
+Rótulos, preços, títulos e descrições devem ser texto real da página.
+Use largura proporcional e altura automática; não estique os arquivos.
+Algumas peças incluem halo/sombra suave e margens transparentes.
+Não são modelos 3D editáveis, nem vídeos; são imagens com aparência 3D.
+Antes da publicação, dimensione e comprima cópias para o tamanho de exibição,
+preservando estes originais. Não é necessário carregar todo o kit na abertura.
+
+MOVIMENTO
+O arquivo paleta-e-movimentos.css oferece flutuação e interação opcionais.
+A galeria usa pequenas translações para demonstrar movimento, com botão de pausa.
+Respeite a preferência de movimento reduzido. Não use flashes rápidos.
+A composição da galeria é demonstrativa, não uma loja funcional.
+
+GERAÇÃO
+Ferramenta integrada image_gen (sem uso de CLI).
+Um pedido separado por imagem. Prompts completos em prompts.txt.
+Inventário e transparência conferidos após a geração.
+

@@ -1,0 +1,32 @@
+DIVISOR DE SEÇÕES — ROCKET’S GAMES
+
+O recorte em zigue-zague substitui visualmente a emenda horizontal. O miolo escuro é opaco e cobre o encontro dos backgrounds; o restante do arquivo tem fundo transparente. As bordas amarelas e ciano, pequenas faces de profundidade e retícula seguem o kit comics.
+
+ARQUIVOS
+divisor-comics-desktop.svg — vetor escalável, proporção 1920 × 220.
+divisor-comics-desktop.png — PNG transparente 3840 × 440.
+divisor-comics-mobile.svg — desenho compacto 768 × 180, evita detalhes espremidos no celular.
+divisor-comics-mobile.png — PNG transparente 1536 × 360.
+divisor.css — posicionamento entre seções.
+PREVIA.html — comparação visual com os backgrounds do kit, sem montar ou alterar a landing.
+
+INSERÇÃO (exemplo de caminhos relativos à raiz de P0)
+<link rel="stylesheet" href="11-divisores-de-secao/divisor.css">
+
+<section>...primeira parte...</section>
+<div class="rg-divisor" aria-hidden="true">
+  <picture>
+    <source media="(max-width:700px)" srcset="11-divisores-de-secao/divisor-comics-mobile.svg">
+    <img src="11-divisores-de-secao/divisor-comics-desktop.svg" alt="" width="1920" height="220" draggable="false">
+  </picture>
+</div>
+<section>...próxima parte...</section>
+
+POSICIONAMENTO
+Coloque o divisor como irmão das seções, exatamente entre elas. Seu contêiner tem altura zero; a arte fica metade sobre cada fundo, cobrindo a emenda. Não o coloque dentro de uma seção com overflow:hidden, porque seria recortado. O contêiner pai deve permitir overflow visível, sem gap vertical entre esses três irmãos. Se as seções tiverem seu próprio z-index, ajuste o divisor para ficar acima dos backgrounds e abaixo de menus/controles.
+
+Reserve aproximadamente 70–90 px livres de texto e botões em cada lado da emenda no desktop, e 50 px no celular. A arte é decorativa, sem área clicável, texto ou animação própria. Não deve cobrir informações nem mudar a navegação. Pode ser repetida nas demais divisões.
+
+IMPORTANTE: o PNG não precisa de fundo colorido nem modo de mesclagem. Preserve o alfa. Prefira o SVG para nitidez em qualquer largura. Se usar os PNGs, substitua ambos os caminhos .svg pelos equivalentes .png.
+
+Origem: desenho vetorial original criado para esta tarefa, com as cores do kit. Sem fontes, scripts, imagens externas ou marcas incorporadas ao divisor.

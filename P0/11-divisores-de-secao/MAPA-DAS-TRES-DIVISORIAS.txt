@@ -1,0 +1,31 @@
+ROCKET’S GAMES — TRÊS DIVISÓRIAS
+
+1. INTRODUÇÃO → MERCADO (azul → escuro)
+Arquivos anteriores: divisor-comics-desktop.svg/png e divisor-comics-mobile.svg/png.
+Bordas amarelo/ciano. A primeira faixa foi preservada.
+
+2. MERCADO → 3 MOTIVOS (escuro → verde-lima)
+Pasta: 02-mercado-para-motivos
+Arquivos: divisor-desktop.svg/png e divisor-mobile.svg/png.
+Recortes com borda laranja em cima e verde-lima embaixo, acompanhando os detalhes da seção escura e o fundo verde seguinte.
+
+3. 3 MOTIVOS → CONTATOS (verde-lima → verde-lima)
+Pasta: 03-motivos-para-contatos
+Arquivos: divisor-desktop.svg/png e divisor-mobile.svg/png.
+Outro ritmo de recortes, com ciano em cima, vermelho embaixo e pequenos detalhes amarelos. O miolo preto cobre o reinício do desenho do fundo, mesmo quando as duas partes usam o mesmo verde.
+
+POSICIONAMENTO
+As três usam o divisor.css existente: contêiner de altura zero entre as duas seções, sem gap, faixa centrada verticalmente na emenda. Não aplicar dentro de uma seção que recorte overflow. Reserve espaço livre entre a faixa e textos/botões. O interior é opaco em toda a largura na linha da emenda; as áreas externas são transparentes. Nenhuma landing foi modificada.
+
+EXEMPLO PARA A SEGUNDA DIVISÃO (caminhos a partir da raiz P0)
+<link rel="stylesheet" href="11-divisores-de-secao/divisor.css">
+<div class="rg-divisor" aria-hidden="true">
+  <picture>
+    <source media="(max-width:700px)" srcset="11-divisores-de-secao/02-mercado-para-motivos/divisor-mobile.svg">
+    <img src="11-divisores-de-secao/02-mercado-para-motivos/divisor-desktop.svg" alt="" width="1920" height="220" draggable="false">
+  </picture>
+</div>
+
+Para a última divisão, troque 02-mercado-para-motivos por 03-motivos-para-contatos nos dois caminhos. Insira o bloco exatamente entre a seção de motivos e a seção de contatos. Prefira SVG para manter nitidez; PNG disponível em 3840 × 440 (desktop) e 1536 × 360 (celular).
+
+Abra PREVIA-NOVAS-DIVISORIAS.html para conferir as duas novas faixas sobre os backgrounds do kit. Desenhos vetoriais originais sem texto, fontes ou arquivos externos incorporados.

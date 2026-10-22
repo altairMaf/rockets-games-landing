@@ -1,0 +1,60 @@
+{
+  "validacao": "SVGs válidos, transparência real e centro 100% opaco em toda a largura nas 4 versões",
+  "arquivos": [
+    {
+      "arquivo": "02-mercado-para-motivos/divisor-desktop.svg",
+      "bytes": 1995,
+      "sha256": "0eb5e7db48ac1f1958d7156b625ed99a266fbd5ededad87e5abfcffb98417c72"
+    },
+    {
+      "arquivo": "02-mercado-para-motivos/divisor-desktop.png",
+      "bytes": 53582,
+      "sha256": "44f2db501e5c7d0187f03e8501b20dd28a7628230522ab8a2031c8e01cb47939"
+    },
+    {
+      "arquivo": "02-mercado-para-motivos/divisor-mobile.svg",
+      "bytes": 1574,
+      "sha256": "d8cc1950d7d16f386d2db70078392cbc3cab121b30ac2462abaae6f19221e1f0"
+    },
+    {
+      "arquivo": "02-mercado-para-motivos/divisor-mobile.png",
+      "bytes": 25951,
+      "sha256": "45053523c54d1eb3a51f93939280f4bb5753fbabe915a97c9dfcf1b31d965141"
+    },
+    {
+      "arquivo": "03-motivos-para-contatos/divisor-desktop.svg",
+      "bytes": 1889,
+      "sha256": "0283df89b2c748f4c5188f5e351c90169f80baf125952107412c65d2c4af2c85"
+    },
+    {
+      "arquivo": "03-motivos-para-contatos/divisor-desktop.png",
+      "bytes": 51047,
+      "sha256": "aff93bc4533f1223155511767ca9948e317f3275a6fd62a71a8e8512716376c5"
+    },
+    {
+      "arquivo": "03-motivos-para-contatos/divisor-mobile.svg",
+      "bytes": 1572,
+      "sha256": "3d3297c942b7b47a5280941f94f7ec2cc6cd9c1d9e1bd046be11bc27620f8738"
+    },
+    {
+      "arquivo": "03-motivos-para-contatos/divisor-mobile.png",
+      "bytes": 25464,
+      "sha256": "826fdb3b588ae887e98fc0c32d9d50ac13ef1e7e70af8422cdec42c83fa582b4"
+    },
+    {
+      "arquivo": "MAPA-DAS-TRES-DIVISORIAS.txt",
+      "bytes": 2171,
+      "sha256": "7363d4d55cdb6920e20ce7a524fd70936f39a6448aeab15ae2752ddf926420cf"
+    },
+    {
+      "arquivo": "PREVIA-NOVAS-DIVISORIAS.html",
+      "bytes": 3080,
+      "sha256": "7f5f0514950208c3d1ae812c4d1c912e9af0eef61d67003d6d98ffd97312e283"
+    },
+    {
+      "arquivo": "PREVIA-DUAS-NOVAS.png",
+      "bytes": 100391,
+      "sha256": "b4920b3c2d5f903193d86d61c2aac1716657989225f1fca2d62216c6bd96e947"
+    }
+  ]
+}

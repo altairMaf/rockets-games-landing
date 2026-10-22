@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rocket's Games — sua próxima fase começa aqui</title>
+<meta name="description" content="Rocket's Games: mídias físicas, consoles e periféricos, novos e usados, para Xbox, PS4, PS5 e Nintendo Switch.">
+<link rel="stylesheet" href="P0/06-tipografia/fontes.css">
+<link rel="stylesheet" href="P0/09-complementos/05-movimentos/componentes.css">
+<link rel="stylesheet" href="P0/11-divisores-de-secao/divisor.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body class="locked">
+
+<a class="sr-only" href="#intro-loja">Ir para o conteúdo</a>
+
+<audio id="musica" src="P0/10-Sons/Som de Fundo.mp3" loop preload="auto"></audio>
+<button id="som" class="som-toggle" type="button" aria-pressed="true" aria-label="Ligar ou desligar a música de fundo"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><g class="ondas" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 9a4 4 0 0 1 0 6"/><path d="M18.5 6.5a8 8 0 0 1 0 11"/></g><path class="corte" d="M4 4l16 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg><span>Música</span></button>
+
+<!-- 1) ABERTURA -->
+<section id="abertura" class="rg-float-scene" aria-label="Abertura">
+  <div class="f f-controle rg-float"><img src="P0/03-elementos/controle-3d.png" alt="" style="--rg-drift:6.5s"></div>
+  <div class="f f-raio rg-float"><img src="P0/03-elementos/raio-3d.png" alt="" style="--rg-drift:5s"></div>
+  <div class="f f-arcade rg-float"><img src="P0/03-elementos/arcade-3d.png" alt="" style="--rg-drift:7.5s"></div>
+  <div class="f f-trofeu rg-float"><img src="P0/03-elementos/trofeu-3d.png" alt="" style="--rg-drift:5.8s"></div>
+  <div class="f m m1 rg-float"><img src="P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:4.0s"></div>
+  <div class="f m m2 rg-float"><img src="P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:4.5s"></div>
+  <div class="f m m3 rg-float"><img src="P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:5.0s"></div>
+  <div class="f m m4 rg-float"><img src="P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:5.4s"></div>
+  <div class="f m m5 rg-float"><img src="P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:5.8s"></div>
+  <div class="f m m6 rg-float"><img src="P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:6.3s"></div>
+  <div class="f m m7 rg-float"><img src="P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:6.8s"></div>
+  <div class="f m m8 rg-float"><img src="P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:7.2s"></div>
+  <div class="f m m9 rg-float"><img src="P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:7.7s"></div>
+
+  <div class="abertura-centro">
+    <p class="apoio">Sua próxima fase começa aqui.</p>
+    <div class="rg-perspective logo-stage">
+      <h1 class="logo-h1"><img id="logo" src="P0/06-tipografia/logo-rockets-games.svg" alt="Rocket's Games"></h1>
+    </div>
+    <button id="conheca" type="button" class="rg-action btn-img btn-amarelo" aria-label="Conheça a Rocket’s Games"><span class="rotulo">Conheça-nos</span></button>
+  </div>
+</section>
+
+<!-- LANDING -->
+<main id="site" hidden>
+
+  <!-- 2) INTRODUÇÃO -->
+  <section id="intro-loja" class="screen s-intro" aria-labelledby="t-intro">
+    <div class="screen__in rg-float-scene" id="cena-intro">
+      <div class="intro-grid">
+        <div class="painel painel-escuro" data-rg-reveal>
+          <p class="eyebrow">SEU UNIVERSO GAMER</p>
+          <h2 id="t-intro" tabindex="-1">Dê o próximo <em>play.</em> Do seu jeito.</h2>
+          <p>Na Rocket's Games, sua próxima aventura pode começar com uma mídia física, um novo console ou aquele periférico que faltava no setup. Trabalhamos com produtos novos e usados para você explorar possibilidades e encontrar o que combina com a sua forma de jogar.</p>
+          <p>Xbox, PS4, PS5 e Nintendo Switch: diferentes plataformas, a mesma vontade de jogar. Consulte os produtos disponíveis e descubra seu próximo favorito.</p>
+          <ul class="chips" aria-label="Categorias">
+            <li><img src="P0/09-complementos/02-icones/midia.svg" alt="">Mídias físicas</li>
+            <li><img src="P0/09-complementos/02-icones/console.svg" alt="">Consoles</li>
+            <li><img src="P0/09-complementos/02-icones/headset.svg" alt="">Periféricos</li>
+            <li><img src="P0/09-complementos/02-icones/estrela.svg" alt="">Novos e usados</li>
+          </ul>
+          <ul class="chips plat" aria-label="Plataformas">
+            <li class="p-xbox">Xbox</li><li class="p-ps">PS4</li><li class="p-ps">PS5</li><li class="p-nin">Nintendo Switch</li>
+          </ul>
+          <a href="#mercado" class="rg-action btn-img btn-azul go"><span class="rotulo">Explore as possibilidades</span></a>
+        </div>
+        <div class="intro-arte">
+          <div class="rg-float a1"><img src="P0/09-complementos/04-ilustracoes/consoles-e-perifericos.png" alt="Ilustração de consoles e periféricos" style="--rg-drift:6s"></div>
+          <div class="rg-float a2"><img src="P0/03-elementos/raio-3d.png" alt="" style="--rg-drift:4.4s"></div>
+          <div class="rg-float a3"><img src="P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:5.2s"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rg-divisor" aria-hidden="true">
+    <picture>
+      <source media="(max-width:700px)" srcset="P0/11-divisores-de-secao/divisor-comics-mobile.svg">
+      <img src="P0/11-divisores-de-secao/divisor-comics-desktop.svg" alt="" width="1920" height="220" draggable="false">
+    </picture>
+  </div>
+
+  <!-- 3) MERCADO -->
+  <section id="mercado" class="screen s-mercado" aria-labelledby="t-mercado">
+    <div class="screen__in" id="cena-mercado">
+      <div class="painel painel-escuro largo" data-rg-reveal>
+        <p class="eyebrow">O JOGO CONTINUA FORA DA TELA</p>
+        <h2 id="t-mercado">Mídia física. Diversão que ganha lugar na <em>estante.</em></h2>
+        <div class="duas">
+          <div>
+            <p>No universo da mídia física, discos, cartuchos e caixas também fazem parte da experiência. Para escolher, vale olhar além do título: plataforma, edição, estado de conservação e itens incluídos ajudam a comparar as opções.</p>
+            <p>Produtos novos e usados ampliam as possibilidades de escolha. Na Rocket's Games, você encontra esse universo ao lado de consoles e periféricos, para pensar no jogo e no setup no mesmo lugar.</p>
+          </div>
+          <div class="arte-midias rg-float"><img src="P0/09-complementos/04-ilustracoes/midias-fisicas.png" alt="Ilustração de mídias físicas de jogos" style="--rg-drift:6s"></div>
+        </div>
+        <ul class="criterios" aria-label="O que comparar antes de escolher">
+          <li><img src="P0/09-complementos/02-icones/console.svg" alt=""><b>Plataforma</b><span>Xbox, PlayStation ou Switch</span></li>
+          <li><img src="P0/09-complementos/02-icones/estrela.svg" alt=""><b>Edição</b><span>Padrão, colecionador, versões</span></li>
+          <li><img src="P0/09-complementos/02-icones/check.svg" alt=""><b>Conservação</b><span>Novo ou usado: veja a condição</span></li>
+          <li><img src="P0/09-complementos/02-icones/midia.svg" alt=""><b>Itens incluídos</b><span>O que acompanha a caixa</span></li>
+        </ul>
+        <p class="destaque"><span>Mais possibilidades para a sua próxima fase.</span></p>
+        <p class="nota">Antes de comprar, confirme a compatibilidade com seu console, a condição do produto e o que acompanha a edição. Requisitos de instalação, conexão e conteúdos digitais variam por jogo.</p>
+        <a href="#motivos" class="rg-action btn-img btn-vermelho go"><span class="rotulo">Veja os 3 motivos</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="rg-divisor" aria-hidden="true">
+    <picture>
+      <source media="(max-width:700px)" srcset="P0/11-divisores-de-secao/02-mercado-para-motivos/divisor-mobile.svg">
+      <img src="P0/11-divisores-de-secao/02-mercado-para-motivos/divisor-desktop.svg" alt="" width="1920" height="220" draggable="false">
+    </picture>
+  </div>
+
+  <!-- 4) 3 MOTIVOS -->
+  <section id="motivos" class="screen s-motivos" aria-labelledby="t-motivos">
+    <div class="screen__in">
+      <header class="cab" data-rg-reveal>
+        <p class="eyebrow claro">ESCOLHA SUA PRÓXIMA FASE</p>
+        <h2 id="t-motivos">3 motivos para conhecer a <em>Rocket’s</em></h2>
+      </header>
+      <div class="cards">
+        <div class="slot" data-rg-reveal style="transition-delay:.05s"><article class="rg-card card">
+          <img class="num" src="P0/09-complementos/03-interface/circulo-1.svg" alt="Motivo 1">
+          <img class="ico" src="P0/09-complementos/02-icones/controle.svg" alt="">
+          <h3>Seu universo, várias plataformas</h3>
+          <p>Mídias físicas para Xbox, PS4, PS5 e Nintendo Switch. Um ponto de partida para descobrir o próximo jogo da sua coleção.</p>
+        </article></div>
+        <div class="slot" data-rg-reveal style="transition-delay:.2s"><article class="rg-card card">
+          <img class="num" src="P0/09-complementos/03-interface/circulo-2.svg" alt="Motivo 2">
+          <img class="ico" src="P0/09-complementos/02-icones/midia.svg" alt="">
+          <h3>Novos e usados, mais possibilidades</h3>
+          <p>Explore as duas opções e compare o que faz sentido para você. Consulte a condição, a edição e a disponibilidade de cada produto.</p>
+        </article></div>
+        <div class="slot" data-rg-reveal style="transition-delay:.35s"><article class="rg-card card">
+          <img class="num" src="P0/09-complementos/03-interface/circulo-3.svg" alt="Motivo 3">
+          <img class="ico" src="P0/09-complementos/02-icones/headset.svg" alt="">
+          <h3>Do jogo ao setup</h3>
+          <p>Além das mídias físicas, a Rocket’s Games trabalha com consoles e periféricos. Encontre possibilidades para completar sua experiência.</p>
+        </article></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rg-divisor" aria-hidden="true">
+    <picture>
+      <source media="(max-width:700px)" srcset="P0/11-divisores-de-secao/03-motivos-para-contatos/divisor-mobile.svg">
+      <img src="P0/11-divisores-de-secao/03-motivos-para-contatos/divisor-desktop.svg" alt="" width="1920" height="220" draggable="false">
+    </picture>
+  </div>
+
+  <!-- 5) CONTATOS -->
+  <section id="contato" class="screen s-contato" aria-labelledby="t-contato">
+    <div class="screen__in">
+      <div class="contato-grid">
+        <div class="painel painel-escuro" data-rg-reveal>
+          <p class="eyebrow">CONTINUE ESSA CONVERSA</p>
+          <h2 id="t-contato">Bora para a <em>próxima fase?</em></h2>
+          <p>Acompanhe a Rocket’s Games nas redes e fique por perto para conhecer os produtos da loja.</p>
+          <ul class="contatos">
+            <li><img src="P0/09-complementos/02-icones/whatsapp.svg" alt=""><span><b>WhatsApp</b> (11) 95555-6666</span></li>
+            <li><img src="P0/09-complementos/02-icones/instagram.svg" alt=""><a href="https://www.instagram.com/pedrao_foguetao/" target="_blank" rel="noopener" aria-label="Visitar o Instagram da Rocket’s Games"><b>Instagram</b> @pedrao_foguetao</a></li>
+            <li><img src="P0/09-complementos/02-icones/tiktok.svg" alt=""><a href="https://www.tiktok.com/@foguetao_games" target="_blank" rel="noopener" aria-label="Visitar o TikTok da Rocket’s Games"><b>TikTok</b> @foguetao_games</a></li>
+            <li><img src="P0/09-complementos/02-icones/localizacao.svg" alt=""><span><b>Endereço</b> Carandiru</span></li>
+          </ul>
+        </div>
+        <div class="foguete-box" data-rg-reveal>
+          <img class="foguete-img" src="P0/09-complementos/04-ilustracoes/foguete-direita.png" alt="" aria-hidden="true">
+          <button id="foguete" type="button" class="rg-action btn-img btn-vermelho" aria-label="Lançar um foguete decorativo por 4 segundos">Lançar foguete</button>
+          <p id="foguete-status" role="status" aria-live="polite" class="status"></p>
+        </div>
+      </div>
+      <footer class="rodape">Rocket's Games — sua próxima fase começa aqui.<small>Esta página é fictícia e foi criada apenas para fins didáticos.</small></footer>
+    </div>
+  </section>
+</main>
+
+<script src="P0/09-complementos/05-movimentos/componentes.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

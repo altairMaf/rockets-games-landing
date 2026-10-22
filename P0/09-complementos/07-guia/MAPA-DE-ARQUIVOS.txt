@@ -1,0 +1,38 @@
+PACOTE COMPLEMENTAR — NÃO É UMA LANDING PAGE
+Data: 22/10/2026. A raiz deste pacote é 09-complementos dentro de P0.
+Abra ABRA-O-CATALOGO.html para inspecionar arquivos e testar componentes isolados.
+
+1. ABERTURA
+Nome/logotipo: ../06-tipografia/logo-rockets-games.svg
+Fonte: ../06-tipografia/ (Montserrat Black 900, aproximação da referência)
+Fundo: ../01-backgrounds/hero-lima.png
+Elementos flutuantes: ../03-elementos/controle-3d.png, raio-3d.png, moeda-estrela.png
+Botão atualizado: 03-interface/botao-conheca-nos.svg; texto exato Conheça-nos.
+Movimentos: opening(), floatScene(), transition(). Chamas: ../07-abertura-e-transicao/transicao-chamas.svg.
+
+2. INTRODUÇÃO
+Texto: 01-textos/conteudo.json > introducao
+Ilustrações: 04-ilustracoes/midias-fisicas.png e consoles-e-perifericos.png
+Ícones: 02-icones/midia.svg, console.svg, headset.svg, controle.svg
+Fundo alternativo: ../01-backgrounds/promocao-azul.png
+
+3. MERCADO
+Texto: conteudo.json > mercado. Moeda: ../03-elementos/moeda-estrela.png
+Movimento: coins() cria camada decorativa limitada a 8 moedas, queda com bounce.
+Fundo: ../01-backgrounds/catalogo-escuro.png. Reserve painel opaco para legibilidade.
+
+4. TRÊS MOTIVOS
+Texto: conteudo.json > motivos; 03-interface/card-motivo-1/2/3.svg
+Peças separadas: circulo-1/2/3.svg, ícones controle/midia/headset; painel vazio original em ../04-paineis/painel-card.png.
+Todos usam a mesma classe rg-card: flutuação no hover e no foco, sem fingir que um card informativo é clicável.
+
+5. CONTATO E FOGUETE
+Texto e campos: conteudo.json > contatos. Pendências: dados-a-preencher.json.
+Ícones: whatsapp, instagram, tiktok, localizacao, relogio, email.
+Botão: botao-lancar-foguete.svg. Sprite: 04-ilustracoes/foguete-direita.png.
+rocket() bloqueia o botão durante 4 segundos; foguete cruza da esquerda para a direita e é removido antes da liberação.
+
+TRANSVERSAL
+Scroll/PageDown: reveal() aplica surgimento com zoom, sem capturar teclas nem sequestrar o scroll.
+Cursor: 06-cursor/ e cursor() — seta amarela, halo ciano animado, hover verde, clique em explosão.
+Fonte, botões vazios, backgrounds e elementos do kit anterior continuam disponíveis. Nenhuma landing nova foi montada. A demonstração antiga de 07-abertura-e-transicao foi preservada e usa o rótulo antigo ENTRAR; o conteúdo atual deste complemento usa Conheça-nos.

@@ -1,0 +1,1 @@
+Cursor em SVG 32×32; ponto de clique x=4, y=3. A seta permanece no ponto real do mouse; só o halo acompanha com suavização. Estado ativo verde, impacto ao clicar. O módulo é opt-in e pode ser desativado. Não ativa em toque, ponteiro impreciso ou movimento reduzido. Em campos de texto, mantém o cursor de seleção nativo. Veja ../05-movimentos/COMO-USAR.txt.

@@ -1,0 +1,11 @@
+{
+  "abertura": {"entrada_ms":1500,"balanco_ms":4000,"repeticoes_balanco":2},
+  "botao_conheca": {"pulso_ms":2600,"repeticoes":3,"hover_ms":200},
+  "flutuacao": {"ciclo_ms":6000,"amplitude_px":14,"parallax_max_px":12},
+  "transicao": {"duracao_ms":1400,"troca_conteudo_ms":700,"cobertura_total_inicio":0.36,"cobertura_total_fim":0.64},
+  "moedas": {"maximo":8,"duracao_min_ms":3800,"duracao_max_ms":4850,"quicamentos":2},
+  "cards": {"hover_ms":320,"elevacao_px":14,"rotacao_graus":-1.2,"escala":1.025},
+  "scroll": {"opacidade_ms":750,"zoom_ms":900,"escala_inicial":0.91,"deslocamento_px":26,"repetir":false},
+  "foguete": {"duracao_ms":4000,"direcao":"esquerda para direita","bloqueio_ms":4000,"liberar_apos_remover":true},
+  "cursor": {"tamanho_svg_px":32,"hotspot":[4,3],"halo_px":48,"rotacao_ms":8000,"clique_ms":350,"somente_mouse_preciso":true}
+}

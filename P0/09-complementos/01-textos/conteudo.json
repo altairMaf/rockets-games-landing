@@ -1,0 +1,100 @@
+{
+  "marca": "Rocket's Games",
+  "abertura": {
+    "nome": "Rocket's Games",
+    "apoio": "Sua próxima fase começa aqui.",
+    "botao": "Conheça-nos",
+    "pular": "Pular animação",
+    "movimento": "Pausar animações"
+  },
+  "introducao": {
+    "sobretitulo": "SEU UNIVERSO GAMER",
+    "titulo": "Dê o próximo play. Do seu jeito.",
+    "texto": "Na Rocket's Games, sua próxima aventura pode começar com uma mídia física, um novo console ou aquele periférico que faltava no setup. Trabalhamos com produtos novos e usados para você explorar possibilidades e encontrar o que combina com a sua forma de jogar.",
+    "complemento": "Xbox, PS4, PS5 e Nintendo Switch: diferentes plataformas, a mesma vontade de jogar. Consulte os produtos disponíveis e descubra seu próximo favorito.",
+    "categorias": [
+      "Mídias físicas",
+      "Consoles",
+      "Periféricos",
+      "Novos e usados"
+    ],
+    "plataformas": [
+      "Xbox",
+      "PS4",
+      "PS5",
+      "Nintendo Switch"
+    ],
+    "botao": "Explore as possibilidades"
+  },
+  "mercado": {
+    "sobretitulo": "O JOGO CONTINUA FORA DA TELA",
+    "titulo": "Mídia física. Diversão que ganha lugar na estante.",
+    "texto": "No universo da mídia física, discos, cartuchos e caixas também fazem parte da experiência. Para escolher, vale olhar além do título: plataforma, edição, estado de conservação e itens incluídos ajudam a comparar as opções.",
+    "complemento": "Produtos novos e usados ampliam as possibilidades de escolha. Na Rocket's Games, você encontra esse universo ao lado de consoles e periféricos, para pensar no jogo e no setup no mesmo lugar.",
+    "destaque": "Mais possibilidades para a sua próxima fase.",
+    "nota": "Antes de comprar, confirme a compatibilidade com seu console, a condição do produto e o que acompanha a edição. Requisitos de instalação, conexão e conteúdos digitais variam por jogo.",
+    "botao": "Veja os 3 motivos"
+  },
+  "motivos": {
+    "sobretitulo": "ESCOLHA SUA PRÓXIMA FASE",
+    "titulo": "3 motivos para conhecer a Rocket’s",
+    "cards": [
+      {
+        "numero": 1,
+        "titulo": "Seu universo, várias plataformas",
+        "texto": "Mídias físicas para Xbox, PS4, PS5 e Nintendo Switch. Um ponto de partida para descobrir o próximo jogo da sua coleção.",
+        "icone": "controle"
+      },
+      {
+        "numero": 2,
+        "titulo": "Novos e usados, mais possibilidades",
+        "texto": "Explore as duas opções e compare o que faz sentido para você. Consulte a condição, a edição e a disponibilidade de cada produto.",
+        "icone": "midia"
+      },
+      {
+        "numero": 3,
+        "titulo": "Do jogo ao setup",
+        "texto": "Além das mídias físicas, a Rocket’s Games trabalha com consoles e periféricos. Encontre possibilidades para completar sua experiência.",
+        "icone": "headset"
+      }
+    ]
+  },
+  "contatos": {
+    "sobretitulo": "CONTINUE ESSA CONVERSA",
+    "titulo": "Bora para a próxima fase?",
+    "texto": "Acompanhe a Rocket’s Games nas redes e fique por perto para conhecer os produtos da loja.",
+    "whatsapp": {
+      "rotulo": "WhatsApp",
+      "exibicao": "(11) 95555-6666",
+      "ficticio": true,
+      "url": null,
+      "nota": "Número fictício para composição visual. Substituir antes de ativar o contato."
+    },
+    "instagram": {
+      "exibicao": "@pedrao_foguetao",
+      "url": "https://www.instagram.com/pedrao_foguetao/",
+      "verificado": false
+    },
+    "tiktok": {
+      "exibicao": "@foguetao_games",
+      "url": "https://www.tiktok.com/@foguetao_games",
+      "verificado": false
+    },
+    "endereco": null,
+    "horario": null,
+    "email": null,
+    "cnpj": null,
+    "botao_foguete": "Lançar foguete",
+    "foguete_ocupado": "Foguete em voo…",
+    "foguete_concluido": "Missão concluída. Pode lançar de novo!",
+    "rodape": "Rocket's Games — sua próxima fase começa aqui."
+  },
+  "rotulos_acessiveis": {
+    "conheca": "Conheça a Rocket’s Games",
+    "instagram": "Visitar o Instagram da Rocket’s Games",
+    "tiktok": "Visitar o TikTok da Rocket’s Games",
+    "foguete": "Lançar um foguete decorativo por 4 segundos",
+    "movimento": "Ativar ou pausar animações",
+    "cursor": "Ativar ou desativar cursor personalizado"
+  }
+}

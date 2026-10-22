@@ -1,0 +1,56 @@
+COMPONENTES INDEPENDENTES — GUIA DE INTEGRAÇÃO
+
+Não há uma landing page neste complemento. ABRA-O-CATALOGO.html é apenas um catálogo de arquivos com testes isolados. As peças podem ser integradas pelo desenvolvedor na estrutura final.
+
+1. CARREGAR OS ARQUIVOS (adapte o prefixo mantendo a estrutura de P0)
+<link rel="stylesheet" href="P0/09-complementos/05-movimentos/componentes.css">
+<script defer src="P0/09-complementos/05-movimentos/componentes.js"></script>
+
+Chame os métodos depois de o documento e o script terem carregado. RocketKit é um objeto global, sem dependências. Quase todos os métodos retornam uma função de limpeza; chame-a ao desmontar a seção, trocar rota ou pausar o efeito. Não monte duas instâncias sobre o mesmo botão/cena.
+
+2. ABERTURA
+Coloque o logo em um contêiner com classe rg-perspective e use um botão HTML real com classe rg-action e texto Conheça-nos.
+const stopOpening = RocketKit.opening(logo, {button: botaoConheca});
+Para os elementos decorativos, use contêiner .rg-float-scene; cada elemento fica num wrapper .rg-float com um img dentro. O wrapper recebe o deslocamento pelo mouse, a imagem flutua suavemente.
+const stopFloat = RocketKit.floatScene(cena);
+Defina posição, tamanho e profundidade dos wrappers conforme o layout; marque ilustrações decorativas com alt="". Em dispositivos sem hover, não há reação ao ponteiro. Flutuação contínua precisa de controle de pausa.
+
+3. TRANSIÇÃO APÓS CONHEÇA-NOS
+botaoConheca.addEventListener('click', async () => {
+  botaoConheca.disabled = true;
+  try {
+    await RocketKit.transition({onCovered: () => {
+      // Mostrar a introdução, ocultar a abertura e preparar foco aqui.
+      // A troca acontece com a tela coberta pelas chamas, em 700 ms.
+    }});
+    // Focar o título da introdução (tabindex="-1") depois da passagem.
+  } finally { botaoConheca.disabled = false; }
+});
+O módulo não altera páginas nem conteúdo por conta própria. A camada bloqueia novas transições internamente; também bloqueie o botão real. Duração normal 1400 ms. Em movimento reduzido, onCovered é chamado imediatamente sem a varredura. Falha na imagem também permite continuar. O force:true só deve ser usado num teste expressamente ativado pelo usuário.
+
+4. MOEDAS / MERCADO
+O contêiner deve ter position:relative, altura definida pelo conteúdo e overflow:hidden. Use um painel de texto acima da camada decorativa (position:relative; z-index:1).
+const stopCoins = RocketKit.coins(secaoMercado);
+São até 8 moedas; queda, dois quicamentos e saída. Pausam com a aba oculta. Para parar, chame stopCoins(). Não colocá-las sobre o texto. O catálogo usa force:true só após um clique de teste.
+
+5. CARDS
+Aplique classe rg-card aos três painéis. O mesmo hover eleva 14 px, inclina 1,2° e aumenta 2,5%. Links reais dentro do card recebem foco de teclado; focus-within produz a mesma resposta. Se os cards forem apenas informativos, não crie links falsos nem obrigue o usuário a interagir para ler. A animação de entrada vem de reveal().
+
+6. SCROLL / PAGEDOWN
+const stopReveal = RocketKit.reveal(document.querySelectorAll('[data-rg-reveal]'));
+Aplica opacity 0→1, scale .91→1 e deslocamento 26→0 px quando cada bloco entra na área visível. Cada bloco aparece uma vez. Scroll, roda do mouse, toque e PageDown permanecem nativos. Sem JavaScript, os blocos ficam visíveis. Não use uma seção gigantesca como único alvo; prefira título, texto, ilustração e cards. Não anime o mesmo transform no elemento do hover e no contêiner de revelação: aninhe o card dentro do wrapper de entrada.
+
+7. FOGUETE — 4 SEGUNDOS
+Use botão com texto simples Lançar foguete e um elemento de status role="status" aria-live="polite".
+const stopRocket = RocketKit.rocket(botaoFoguete, {status: statusFoguete});
+Um clique cria um sprite decorativo fixo cruzando a tela da esquerda para a direita. O botão recebe disabled e aria-busy durante 4000 ms. Antes de liberar o botão, o sprite é removido. Cliques repetidos não criam novos foguetes. Se a imagem falhar, o botão é liberado com aviso. Em movimento reduzido, substitui o deslocamento por uma aparição discreta de 4 segundos. Não depende de animação de um GIF. O PNG pode ser reaproveitado separadamente.
+
+8. CURSOR PERSONALIZADO E ANIMADO
+const stopCursor = RocketKit.cursor();
+Seta amarela no ponto real do mouse, halo ciano com rotação e suavização; verde ao passar sobre ações; explosão curta no clique. O cursor de texto é preservado. Só ativa em dispositivo com mouse preciso e hover; não ativa em movimento reduzido, salvo opt-in explícito usando {force:true}. Ao apertar Tab ou sair da janela, o halo desaparece. Para desativar, stopCursor(). Inclua um controle acessível para voltar ao cursor padrão. Não esconda o cursor nativo com cursor:none: o SVG substitui a seta e possui fallback automático.
+
+9. MOVIMENTO E ACESSIBILIDADE
+Respeite prefers-reduced-motion e ofereça pausa. Evite repetição indefinida de zoom ou efeito piscante. Efeitos decorativos usam pointer-events:none e aria-hidden. O catálogo tem botões explícitos para enxergar os efeitos mesmo quando o sistema está em movimento reduzido; isso não deve virar autoplay no site final. Texto e controles reais devem permanecer em HTML, com contraste e foco visível. Não esconda informações essenciais dentro de imagens.
+
+10. TIPOGRAFIA / FIDELIDADE
+O CSS carrega Montserrat local. Peso 900 para títulos, 500–650 para textos. A fonte exata e os parâmetros do vídeo original não foram confirmados. A abertura 3D e a passagem de chamas são interpretações fornecidas para implementação, não uma promessa de cópia idêntica.

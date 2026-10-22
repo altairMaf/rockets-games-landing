@@ -1,0 +1,14 @@
+REFERÊNCIAS E LIMITES DO PACOTE
+Fontes visuais:
+https://www.youtube.com/shorts/lrhD1xZROjA
+https://www.youtube.com/shorts/oyaA09TMdzc
+Referências comerciais fornecidas:
+https://shopee.com.br/loja_flavionko?page=2&sortBy=pop&tab=0
+https://www.mercadolivre.com.br/loja/nko-gamer-store
+A página N.K.O Gamer Store foi consultada no navegador: catálogo de jogos físicos e organização por produtos/plataformas. A página Shopee não pôde ser consultada. Textos deste pacote são originais; não reproduzem avaliações, preços, prazos, status de loja oficial ou promessas das referências.
+
+Informações da Rocket’s Games confirmadas pelo usuário: produtos novos e usados, consoles, periféricos e mídias físicas para Xbox, PS4/PS5 e Nintendo Switch. Instagram @pedrao_foguetao, TikTok @foguetao_games. WhatsApp (11) 95555-6666 informado expressamente como fictício; nenhum link de WhatsApp foi ativado. Endereço e horários pendentes.
+
+A tipografia já fornecida em 06-tipografia é Montserrat, licença OFL. A fonte do vídeo NÃO foi identificada com certeza. O movimento fornecido é uma adaptação original, não uma reprodução idêntica. Para equivalência exata, faltam a identificação da fonte e o projeto original/parâmetros da animação. Não foi incluído vídeo baixado de terceiros.
+
+Ilustrações: ferramenta integrada image_gen, prompts em prompts-imagens.txt. Consoles, mídias e periféricos são fictícios e decorativos, não fotos do estoque. Ícones, cursor e interface são SVGs originais. SVGs com texto incorporam Montserrat para não depender de instalação. Na página futura, prefira texto HTML acessível sobre os fundos e ícones; os cards SVG são peças prontas de referência.

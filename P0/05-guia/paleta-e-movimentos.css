@@ -1,0 +1,10 @@
+:root{--game-lime:#9BFF00;--game-yellow:#FFE600;--game-red:#FF3038;--game-cyan:#05BDED;--game-ink:#111018}
+.game-asset{display:block;max-width:100%;height:auto}
+.game-float{animation:game-float 5s ease-in-out infinite}
+.game-action{transition:transform 160ms ease;cursor:pointer}
+.game-action:hover{transform:translateY(-4px)}
+.game-action:active{transform:translateY(2px)}
+.game-action:focus-visible{outline:3px solid var(--game-cyan);outline-offset:5px}
+@keyframes game-float{0%,100%{translate:0 0}50%{translate:0 -12px}}
+@media(prefers-reduced-motion:reduce){.game-float{animation:none}.game-action{transition:none}}
+

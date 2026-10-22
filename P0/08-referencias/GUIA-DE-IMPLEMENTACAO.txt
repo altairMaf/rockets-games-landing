@@ -1,0 +1,85 @@
+ROCKET'S GAMES — ABERTURA E TRANSIÇÃO
+22/10/2026
+
+COMECE-AQUI.html é o índice deste material.
+07-abertura-e-transicao/DEMO.html mostra a sequência completa.
+06-tipografia/AMOSTRA.html compara a fonte simples com o tratamento 3D.
+08-referencias/REFERENCIAS.html reúne as fontes e o roteiro.
+
+O QUE FOI IDENTIFICADO
+Primeiro vídeo: 3D TEXT ANIMATION in After Effects — Easy, Beginner Tutorial.
+Autor: EB Studio (@eb.studio).
+URL: https://www.youtube.com/shorts/lrhD1xZROjA
+Aparência observada: letras pesadas vermelhas, contorno preto, contorno amarelo,
+extrusão preta, inclinação/rotação em perspectiva e formas de impacto coloridas.
+O nome da fonte não foi encontrado na descrição expandida. Identificação exata pendente.
+
+FONTE INCLUÍDA
+Montserrat variável, normal e itálica, pesos 100 a 900.
+Para o protótipo: peso 900 (Black), normal.
+É uma aproximação visual, NÃO a fonte original confirmada.
+Arquivos oficiais Google Fonts, licença original OFL.txt e origens.json incluídos.
+O efeito 3D não está embutido no TTF: é aplicado sobre as letras.
+O SVG fornecido contém uma cópia incorporada da fonte normal para exibição independente.
+Para trocar o nome, edite os textos SVG e o título nos arquivos da demonstração.
+
+SEGUNDA REFERÊNCIA
+Seamless Transitions Green Screen Effect #shorts.
+Autor: @OmarPatti_StudioYM.
+URL: https://www.youtube.com/shorts/oyaA09TMdzc
+O vídeo apresenta várias variantes de fogo/fumaça desenhados sobre verde.
+Adaptação escolhida: varredura horizontal de chamas amarelas, vermelhas e laranja.
+O verde do vídeo serve como fundo de recorte; não precisa entrar no site.
+A demonstração é uma nova interpretação vetorial, não uma cópia exata do vídeo.
+Os vídeos originais são acessados pelos links, não foram baixados nem redistribuídos.
+
+COMO FUNCIONA
+1. Abertura em tela cheia com Rocket's Games e botão Entrar.
+2. Logo entra com perspectiva e acomodação, em aproximadamente 1,5 segundo.
+3. Pequena rotação posterior mostra a profundidade; dura duas repetições.
+4. O usuário clica em Entrar. O botão bloqueia cliques repetidos.
+5. Uma camada de chamas passa por cima da tela (duração total: 1,4 segundo).
+6. Por volta de 0,70 segundo, a camada cobre a tela e o conteúdo muda por baixo.
+7. As chamas saem e revelam o início da landing page.
+8. O foco vai para o conteúdo. Há opção de rever a abertura.
+
+O QUE PODE SER REAPROVEITADO
+DEMO.html: estrutura ilustrativa da abertura e do conteúdo.
+abertura.css: estilo do título, animações e responsividade.
+abertura.js: clique, troca de conteúdo, foco, reinício e redução de movimento.
+transicao-chamas.svg: formas vetoriais da passagem, sem fundo verde.
+logo-rockets-games.svg: amostra vetorial do título com fonte incorporada.
+As imagens do kit anterior continuam sendo usadas por caminhos relativos.
+
+AJUSTES
+Em abertura.js:
+- duration: 1400 controla a duração da passagem.
+- swapTimer=setTimeout(showStore,duration*.5) troca o conteúdo durante a cobertura.
+Mantenha o instante de troca dentro do trecho completamente coberto.
+Na animação atual, os offsets 0.36 a 0.64 mantêm a camada na posição central.
+Se alterar os tempos, confira que a troca não fica visível.
+Em abertura.css:
+- arrival controla a entrada do nome.
+- rock controla a rotação suave após a entrada.
+As cores e o nome podem ser alterados sem gerar um vídeo novo.
+
+ACESSIBILIDADE E USO
+Há opção Pular animação e controle Pausar animação.
+A preferência do sistema por movimento reduzido desativa a entrada animada
+e faz a passagem diretamente ao conteúdo, sem varredura.
+A demonstração funciona localmente, sem bibliotecas externas.
+Sem JavaScript, o conteúdo permanece disponível.
+Não há som automático.
+O conteúdo posterior é ilustrativo: não há catálogo, preços ou checkout reais.
+A fonte original permanece não confirmada; a demonstração não é réplica exata.
+
+
+ATUALIZAÇÃO — CONTROLES DE TESTE
+Se o navegador indicar movimento reduzido, a abertura fica pausada e ENTRAR
+vai diretamente ao conteúdo. Agora há uma mensagem explícita sobre esse estado.
+Para ver o nome em movimento, clique em Ver abertura animada.
+Para examinar as chamas, clique em Testar transição devagar: prévia de 4,5 segundos.
+Esse botão é uma ativação voluntária do efeito, mesmo com movimento reduzido.
+A passagem normal de ENTRAR continua com 1,4 segundo quando as animações estão ativas.
+A transição usa animação CSS. A troca de conteúdo ocorre no meio da passagem;
+o fim da animação revela o conteúdo e um temporizador de segurança evita bloqueio.

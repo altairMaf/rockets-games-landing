@@ -1,0 +1,9 @@
+VERIFICAÇÃO — 22/10/2026
+
+30 arquivos SVG analisados como XML válido. Referências HTML/CSS locais resolvidas. Três PNGs novos com canal alfa real e pixels transparentes.
+
+Testes funcionais: foguete bloqueado em 3999 ms, liberado em 4000 ms após remoção do sprite; clique repetido não duplica; desmontagem limpa o estado; erro de imagem libera o botão; alternativa de movimento reduzido verificada.
+
+Verificação no navegador: nome com classe de entrada, chamas visíveis e concluídas, 8 moedas na cena, foguete visível durante voo e removido ao fim, botão novamente ativo, cursor com halo ativo sobre botão. Nenhum erro de JavaScript registrado durante essas verificações. Prévia de componentes inspecionada visualmente. Capturas: previa-cursor.png, previa-transicao.png, previa-foguete.png.
+
+Limite: testes em navegador Chromium local. A integração à landing final ainda não existe e deverá ser validada em celulares e demais navegadores quando for construída.

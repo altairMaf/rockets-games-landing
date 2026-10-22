@@ -1,0 +1,142 @@
+[
+  {
+    "arquivo": "01-backgrounds/hero-lima.png",
+    "nome": "Fundo principal verde-limão",
+    "largura": 1672,
+    "altura": 941,
+    "transparente": false,
+    "alphaMin": 255,
+    "alphaMax": 255,
+    "bytes": 1505598
+  },
+  {
+    "arquivo": "01-backgrounds/catalogo-escuro.png",
+    "nome": "Fundo escuro para catálogo",
+    "largura": 1672,
+    "altura": 941,
+    "transparente": false,
+    "alphaMin": 255,
+    "alphaMax": 255,
+    "bytes": 1544343
+  },
+  {
+    "arquivo": "01-backgrounds/promocao-azul.png",
+    "nome": "Fundo azul para promoção",
+    "largura": 1672,
+    "altura": 941,
+    "transparente": false,
+    "alphaMin": 255,
+    "alphaMax": 255,
+    "bytes": 1653175
+  },
+  {
+    "arquivo": "02-botoes/botao-amarelo.png",
+    "nome": "Botão primário amarelo sem texto",
+    "largura": 2117,
+    "altura": 743,
+    "transparente": true,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "bytes": 1093709
+  },
+  {
+    "arquivo": "02-botoes/botao-vermelho.png",
+    "nome": "Botão secundário vermelho sem texto",
+    "largura": 2117,
+    "altura": 743,
+    "transparente": true,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "bytes": 954071
+  },
+  {
+    "arquivo": "02-botoes/botao-azul.png",
+    "nome": "Botão terciário azul sem texto",
+    "largura": 2117,
+    "altura": 743,
+    "transparente": true,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "bytes": 1113631
+  },
+  {
+    "arquivo": "03-elementos/controle-3d.png",
+    "nome": "Controle 3D principal",
+    "largura": 1536,
+    "altura": 1024,
+    "transparente": true,
+    "alphaMin": 0,
+    "alphaMax": 254,
+    "bytes": 1827548
+  },
+  {
+    "arquivo": "03-elementos/arcade-3d.png",
+    "nome": "Arcade 3D",
+    "largura": 1145,
+    "altura": 1374,
+    "transparente": true,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "bytes": 1447153
+  },
+  {
+    "arquivo": "03-elementos/moeda-estrela.png",
+    "nome": "Moeda com estrela",
+    "largura": 1286,
+    "altura": 1223,
+    "transparente": true,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "bytes": 1193697
+  },
+  {
+    "arquivo": "03-elementos/raio-3d.png",
+    "nome": "Raio 3D",
+    "largura": 1199,
+    "altura": 1312,
+    "transparente": true,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "bytes": 679594
+  },
+  {
+    "arquivo": "03-elementos/explosao-comics.png",
+    "nome": "Explosão de quadrinhos sem texto",
+    "largura": 1536,
+    "altura": 1024,
+    "transparente": true,
+    "alphaMin": 0,
+    "alphaMax": 254,
+    "bytes": 1481789
+  },
+  {
+    "arquivo": "03-elementos/trofeu-3d.png",
+    "nome": "Troféu 3D",
+    "largura": 1182,
+    "altura": 1330,
+    "transparente": true,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "bytes": 1179255
+  },
+  {
+    "arquivo": "04-paineis/painel-card.png",
+    "nome": "Painel de card vazio",
+    "largura": 1086,
+    "altura": 1448,
+    "transparente": true,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "bytes": 1181969
+  },
+  {
+    "arquivo": "04-paineis/faixa-promocao.png",
+    "nome": "Faixa promocional vazia",
+    "largura": 2079,
+    "altura": 756,
+    "transparente": true,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "bytes": 995917
+  }
+]

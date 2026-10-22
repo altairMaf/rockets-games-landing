@@ -1,0 +1,45 @@
+{
+  "descricao": "Divisores comics com transparência e cobertura opaca contínua na linha central",
+  "arquivos": [
+    {
+      "arquivo": "ANTES-E-DEPOIS.png",
+      "bytes": 100864,
+      "sha256": "014b04ef0c8a897c751fb2417c6e70055bfa7604ff3b5c27e5dae923a02711fa"
+    },
+    {
+      "arquivo": "COMO-USAR.txt",
+      "bytes": 2401,
+      "sha256": "06c68e5a7db824277949fea0b15d6602f3d9652c56a9917a79a4bdb4fc62c2c5"
+    },
+    {
+      "arquivo": "divisor-comics-desktop.png",
+      "bytes": 61399,
+      "sha256": "864c5ebaf92f4616ccaa704909578294249fe3ddafceb0aea5b2431288a6372e"
+    },
+    {
+      "arquivo": "divisor-comics-desktop.svg",
+      "bytes": 2447,
+      "sha256": "501152aeeeef08ecfea89ee2f60c866b98a72b5d00f3872a278d9b3d33664e74"
+    },
+    {
+      "arquivo": "divisor-comics-mobile.png",
+      "bytes": 28023,
+      "sha256": "0c2113dc46901b09d0a07ed7567512a2cf61617a298906cf62812d0c9029e526"
+    },
+    {
+      "arquivo": "divisor-comics-mobile.svg",
+      "bytes": 1837,
+      "sha256": "bbb8b676dd495f4c35fa2fa1a6d651e1dc4fbe35ccd5878b8f8adcb41b08d29c"
+    },
+    {
+      "arquivo": "divisor.css",
+      "bytes": 532,
+      "sha256": "319219f3df7663ae32e0289486d4dc1a1f16c97c785b72173a0a5e720f39e4c2"
+    },
+    {
+      "arquivo": "PREVIA.html",
+      "bytes": 2209,
+      "sha256": "f3167c02b0b3ec8fc906328a9920cdcdfa5903dfbae5da37e8c9bcaf0f7add4d"
+    }
+  ]
+}

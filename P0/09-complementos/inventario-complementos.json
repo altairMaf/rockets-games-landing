@@ -1,0 +1,262 @@
+{
+  "pacote": "Rocket’s Games — complementos",
+  "data": "2026-10-22",
+  "inclui_landing": false,
+  "arquivos": [
+    {
+      "arquivo": "01-textos/conteudo.json",
+      "bytes": 4412,
+      "sha256": "d28115e3052d8790c1f97e98c4435afb99997589375af1249af7383ebcba0558"
+    },
+    {
+      "arquivo": "01-textos/dados-a-preencher.json",
+      "bytes": 323,
+      "sha256": "39079531dae33780dd4e3fd10a26a58635ff8b18a5f1efa7c436746f589652db"
+    },
+    {
+      "arquivo": "01-textos/TEXTOS-PARA-A-PAGINA.txt",
+      "bytes": 3455,
+      "sha256": "5212350de065bc8385ca15e321df34402d66a55debfbdfac0a6476b2ac68ca40"
+    },
+    {
+      "arquivo": "02-icones/chat.svg",
+      "bytes": 566,
+      "sha256": "d2cb1506edbd0759038ea94903f82efcbbd007fbaeb8f8edbc70b5ffc0b1bf00"
+    },
+    {
+      "arquivo": "02-icones/check.svg",
+      "bytes": 527,
+      "sha256": "1b3576cf4a2d316be1ecfcad51b15b4645783584296556a067f138fc1bc7dd2e"
+    },
+    {
+      "arquivo": "02-icones/console.svg",
+      "bytes": 620,
+      "sha256": "cf40881e061413591181a8c81c90df548184608901a90bac81d5cbcee1fcf9fb"
+    },
+    {
+      "arquivo": "02-icones/controle.svg",
+      "bytes": 703,
+      "sha256": "45891f28eabef6196fb1502c9c86568fe8cb307a2592b7a7c5ba6691b6245a17"
+    },
+    {
+      "arquivo": "02-icones/email.svg",
+      "bytes": 578,
+      "sha256": "7edc8b156947d2e376aa254e8187943532f5ae2014e28cb04bd07be89be2450e"
+    },
+    {
+      "arquivo": "02-icones/estrela.svg",
+      "bytes": 565,
+      "sha256": "05bea0a020196b18cfbe54020e2b6a519270f50aafeed2194d13671171ff6bf4"
+    },
+    {
+      "arquivo": "02-icones/headset.svg",
+      "bytes": 674,
+      "sha256": "c284e07a9418b7747b210f4714118dbf38d5591498f42481aa0fe1fe78e4e840"
+    },
+    {
+      "arquivo": "02-icones/instagram.svg",
+      "bytes": 642,
+      "sha256": "6bbd96748960b7ca53f0e753fd6801b6c288cb10013edac881e9aa0bddbb7395"
+    },
+    {
+      "arquivo": "02-icones/LEIA-ME.txt",
+      "bytes": 323,
+      "sha256": "9d189ea5b1e5f38a744bbe184c95417f717aa18484f74e0e0b1e0a7bf362ee66"
+    },
+    {
+      "arquivo": "02-icones/localizacao.svg",
+      "bytes": 599,
+      "sha256": "bb39297033e323e5f556e5cda7af2152eaa96857558503705e6b91b1f08a722e"
+    },
+    {
+      "arquivo": "02-icones/midia.svg",
+      "bytes": 656,
+      "sha256": "6fcd681298a2c7168ebff059ad94b226787726af11521684f9c8840cb46d3303"
+    },
+    {
+      "arquivo": "02-icones/pausa.svg",
+      "bytes": 545,
+      "sha256": "b338d0f3996121300db3d64c9df27e0f531d69ee0a7cdd091a811aa420957f33"
+    },
+    {
+      "arquivo": "02-icones/play.svg",
+      "bytes": 527,
+      "sha256": "c4c1c211e9c714e33166bb7cac747ff37f57c9c9d6e06f51fc937cd48389d70d"
+    },
+    {
+      "arquivo": "02-icones/relogio.svg",
+      "bytes": 557,
+      "sha256": "f5c1e5b504624607678a500897b2f0694a188dacc58875c7f40b9f373e8332fa"
+    },
+    {
+      "arquivo": "02-icones/seta-direita.svg",
+      "bytes": 543,
+      "sha256": "8f6087207e711c24b1d24250f983e1f496aaeff48a79601697e9b47f438c489c"
+    },
+    {
+      "arquivo": "02-icones/tiktok.svg",
+      "bytes": 581,
+      "sha256": "bec2357c2e58e5f50dfd0d776957b926c15fdb5501736f64375d04ca8d383e8e"
+    },
+    {
+      "arquivo": "02-icones/whatsapp.svg",
+      "bytes": 654,
+      "sha256": "3c6f0a06442e8aa648b05f6e973ae51ca3a6f301c161112c12c10e1cd09cbd23"
+    },
+    {
+      "arquivo": "03-interface/botao-conheca-nos.svg",
+      "bytes": 993823,
+      "sha256": "1e19e224cd8ef7ab28000e878119a45a4a16e3ca17416a046cb40ab8b1b79fb4"
+    },
+    {
+      "arquivo": "03-interface/botao-explore.svg",
+      "bytes": 993849,
+      "sha256": "d471d0c1d606df1d11ab63fe2dba9623c0258e7437d582149384273cbb289fe6"
+    },
+    {
+      "arquivo": "03-interface/botao-lancar-foguete.svg",
+      "bytes": 993829,
+      "sha256": "3efd1d7f1a804ded6c956d1aa1cf00c922c4904d51698c0477261be7fa7eefba"
+    },
+    {
+      "arquivo": "03-interface/botao-redes-sociais.svg",
+      "bytes": 993823,
+      "sha256": "6074ca4b12100844874083f3afee5763fdcdb589be2fef40c805bee43a09576c"
+    },
+    {
+      "arquivo": "03-interface/card-motivo-1.svg",
+      "bytes": 994957,
+      "sha256": "d6e68e15c9d03d0aed2230cd1755d74da3395b9f5de92c93e0b3ce6c7c5021db"
+    },
+    {
+      "arquivo": "03-interface/card-motivo-2.svg",
+      "bytes": 994911,
+      "sha256": "f1c9365deeeb65b399a228220f80aad3478866bfde75982f16d7bac23ad0d154"
+    },
+    {
+      "arquivo": "03-interface/card-motivo-3.svg",
+      "bytes": 994885,
+      "sha256": "a6a7a7bf7d781f8f30ce3830a2296f5c6737984ea036860c9ca416d05974402e"
+    },
+    {
+      "arquivo": "03-interface/circulo-1.svg",
+      "bytes": 993733,
+      "sha256": "e38ad7a1f44e4f0b1e665038d1cee1e4a0717c07566e18563b482e77e072027c"
+    },
+    {
+      "arquivo": "03-interface/circulo-2.svg",
+      "bytes": 993733,
+      "sha256": "4829e3fe4c237cefadc17f1dee0035dd2225f704c09c7224f0b215a3c990585c"
+    },
+    {
+      "arquivo": "03-interface/circulo-3.svg",
+      "bytes": 993733,
+      "sha256": "9084be409f51bdaa63e5d3befbf3785cdd1f1bbcdcbf3f802448c2fe955c72c8"
+    },
+    {
+      "arquivo": "04-ilustracoes/consoles-e-perifericos.png",
+      "bytes": 1575653,
+      "sha256": "8897f7d230b43487971df1db22ce3299d06be6b8486f9fb3cd1c8def13b501d9"
+    },
+    {
+      "arquivo": "04-ilustracoes/foguete-direita.png",
+      "bytes": 1073577,
+      "sha256": "9f5281cc8320d8480249f61a7d50bfa129476a45e92e76e48558e4bd84af21b3"
+    },
+    {
+      "arquivo": "04-ilustracoes/midias-fisicas.png",
+      "bytes": 1562134,
+      "sha256": "7bd8a4df9dfdc8d30f961bf54b097e184aef2df7d18b31dacec267e552a22691"
+    },
+    {
+      "arquivo": "05-movimentos/COMO-USAR.txt",
+      "bytes": 5718,
+      "sha256": "d81757f14a07f8886f206f636f5050bfa33012461dcd218e0bc324638c1a336a"
+    },
+    {
+      "arquivo": "05-movimentos/componentes.css",
+      "bytes": 6219,
+      "sha256": "1407ab69d2160cd48721a5423cb3b9c749e4c826514badced73820f132228180"
+    },
+    {
+      "arquivo": "05-movimentos/componentes.js",
+      "bytes": 10058,
+      "sha256": "2ac0d379f9ca63a4ac2d071d16ac5b6d8cf3c1aa9b49e94f22e0c130f9115831"
+    },
+    {
+      "arquivo": "05-movimentos/tempos.json",
+      "bytes": 854,
+      "sha256": "206b2f4d396fc734ca4b6a0d224e006792e40ab37319e06f7672a1806223f584"
+    },
+    {
+      "arquivo": "06-cursor/cursor-ativo.svg",
+      "bytes": 296,
+      "sha256": "e46011f2d87ddb82bf1c81d052f5f7d0b0cf1ac5f21e9ef77ab2562207011ddd"
+    },
+    {
+      "arquivo": "06-cursor/cursor-padrao.svg",
+      "bytes": 294,
+      "sha256": "be1d08864310cc96e38025a4732682c89784654d676758050a17a82a7711651b"
+    },
+    {
+      "arquivo": "06-cursor/halo.svg",
+      "bytes": 286,
+      "sha256": "1aac7f93bcfa767b9fe89e1eba3e2a9ee5c8fb12902ea77d4e7618d9e239cdbe"
+    },
+    {
+      "arquivo": "06-cursor/impacto-clique.svg",
+      "bytes": 245,
+      "sha256": "a17df660eeb597f16f438ba3076f16da4435d9c0d5106b8275a4db023789b01e"
+    },
+    {
+      "arquivo": "06-cursor/LEIA-ME.txt",
+      "bytes": 369,
+      "sha256": "5bd94cfebe0f8b0af66ed0849cd6b70bc8fef70852f9972de1b74f800fb654a9"
+    },
+    {
+      "arquivo": "07-guia/FONTES-E-LIMITES.txt",
+      "bytes": 1742,
+      "sha256": "7dedb529916413ec07dd4a045d99bb33c3b192345dcadfedd320192ab12de07a"
+    },
+    {
+      "arquivo": "07-guia/MAPA-DE-ARQUIVOS.txt",
+      "bytes": 2398,
+      "sha256": "e3e836996b5169486208fadd558bf497d4266782a1aa1125099dd5d09bc19374"
+    },
+    {
+      "arquivo": "07-guia/previa-cursor.png",
+      "bytes": 63756,
+      "sha256": "eb12d322370bfa558a1cfc3f7b3e3be4ac4e79935c92c0ac1de2b60af3e0a050"
+    },
+    {
+      "arquivo": "07-guia/previa-foguete.png",
+      "bytes": 96848,
+      "sha256": "0b1b3316fb5d064595afc3a3b7c7b382460dc6c9499d77c66c6cb76e03e9e11a"
+    },
+    {
+      "arquivo": "07-guia/previa-transicao.png",
+      "bytes": 56876,
+      "sha256": "108a4259ad0c285b2315c65a3d0d11bde37655086de01d3b02209f9d4f4cb404"
+    },
+    {
+      "arquivo": "07-guia/prompts-imagens.txt",
+      "bytes": 2720,
+      "sha256": "2a5c7b70d9de0634d74877be1ff88d1b00f096d16f537bd0ae8328b7e2a07edb"
+    },
+    {
+      "arquivo": "07-guia/VERIFICACAO.txt",
+      "bytes": 997,
+      "sha256": "f4b8e7da8db8e12e49eeb4d247284259bbe00a696f8026ac503d5fd2e37f29a3"
+    },
+    {
+      "arquivo": "ABRA-O-CATALOGO.html",
+      "bytes": 14243,
+      "sha256": "e1057fad6dce05d5c2e0f01675d2eaeeab53e2d6b48350a20c11c6f8e6b1628a"
+    },
+    {
+      "arquivo": "catalogo.js",
+      "bytes": 3475,
+      "sha256": "3c3a9e7b4b4a1643158ea981d7acb483306bfc9a2e2da3cdfb4b17de025f1650"
+    }
+  ]
+}
