@@ -13,31 +13,39 @@
   let entered = false, stops = [], raf = 0;
 
   /* ---------- música de fundo ---------- */
+  // O botão sempre reflete o estado real do áudio. Os navegadores bloqueiam o som
+  // até o primeiro gesto do usuário; por isso, enquanto não toca, qualquer
+  // clique/toque/tecla na página tenta iniciar a música.
   const audio = $('#musica'), somBtn = $('#som');
   let mutedByUser = false;
   audio.volume = .45;
   function setSomUI() {
-    const on = !mutedByUser;
+    const on = !audio.paused;
     somBtn.setAttribute('aria-pressed', String(on));
     somBtn.title = on ? 'Desligar música' : 'Ligar música';
   }
   function tocar() {
-    if (mutedByUser) return;
+    if (mutedByUser || !audio.paused) return;
     const p = audio.play();
     if (p && p.catch) p.catch(() => {});
   }
+  audio.addEventListener('play', setSomUI);
+  audio.addEventListener('playing', setSomUI);
+  audio.addEventListener('pause', setSomUI);
   somBtn.addEventListener('click', () => {
-    mutedByUser = !mutedByUser;
-    if (mutedByUser) audio.pause(); else tocar();
+    if (audio.paused) { mutedByUser = false; tocar(); }
+    else { mutedByUser = true; audio.pause(); }
     setSomUI();
   });
   setSomUI();
-  tocar();   // navegadores só liberam áudio após um gesto: tenta de novo no primeiro toque/tecla
-  ['pointerdown', 'keydown', 'touchstart'].forEach(ev =>
-    addEventListener(ev, function once() {
-      if (!audio.paused) { removeEventListener(ev, once, true); return; }
-      tocar();
-    }, true));
+  tocar();   // funciona se o navegador permitir autoplay
+  const gestos = ['pointerdown', 'mousedown', 'click', 'touchstart', 'touchend', 'keydown'];
+  function porGesto(e) {
+    if (somBtn.contains(e.target)) return;   // o botão decide sozinho
+    tocar();
+  }
+  gestos.forEach(ev => addEventListener(ev, porGesto, true));
+  audio.addEventListener('playing', () => gestos.forEach(ev => removeEventListener(ev, porGesto, true)));
 
   /* ---------- zoom entre as partes + divisórias ---------- */
   const smooth = t => t * t * (3 - 2 * t);
