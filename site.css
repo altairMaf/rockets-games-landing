@@ -37,10 +37,10 @@ button:focus-visible,a:focus-visible{outline:4px solid var(--cyan);outline-offse
 
 /* 1) abertura */
 #abertura .rg-coins{z-index:0;opacity:1}
-#abertura{position:fixed;inset:0;z-index:50;background:var(--lime) url(P0/01-backgrounds/hero-lima.png) center/cover;display:grid;place-items:center;overflow:hidden}
+#abertura{position:fixed;inset:0;z-index:50;background:var(--lime) url(P0/01-backgrounds/hero-lima.png) center/cover;display:grid;grid-template-columns:minmax(0,1fr);place-items:center;overflow:hidden}
 .abertura-centro{position:relative;z-index:3;text-align:center;width:min(100%,1100px);padding:20px}
 .apoio{display:inline-block;background:var(--lime);font-weight:800;letter-spacing:3px;font-size:clamp(10px,1.2vw,14px);text-transform:uppercase;padding:8px 14px;margin:0 0 4px}
-.logo-stage{margin:0 auto 14px;width:min(92vw,900px)}
+.logo-stage{margin:0 auto 14px;width:min(100%,92vw,900px)}
 .logo-h1{margin:0;line-height:0}
 #logo{width:100%;height:auto;display:block}
 #cena-intro{padding:0 16px 20px 0}
@@ -133,6 +133,19 @@ h2 em{font-style:normal;color:var(--yellow);-webkit-text-stroke:1px var(--ink);t
 .rodape small{display:block;font-weight:700;font-size:12px;margin-top:4px;opacity:.85}
 .rodape{margin-top:clamp(28px,6vh,60px);text-align:center;font-weight:800;font-size:13px;color:var(--ink);background:#9bffa0cc;padding:10px;border-radius:8px}
 
+/* 6) dúvidas frequentes */
+.s-duvidas{background:var(--ink) url(P0/01-backgrounds/catalogo-escuro.png) center/cover}
+.s-duvidas .cab h2{color:#fff;-webkit-text-stroke:2px var(--ink);paint-order:stroke fill;text-shadow:4px 4px 0 var(--cyan)}
+.faq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(18px,3vw,36px);max-width:900px;margin:0 auto;align-items:start}
+.faq-item{display:grid;justify-items:center;gap:12px}
+.faq-btn{cursor:pointer;animation:pulso 2.4s ease-in-out infinite;overflow:visible}
+.faq-item:nth-child(2) .faq-btn{animation-delay:-.6s}
+.faq-item:nth-child(3) .faq-btn{animation-delay:-1.2s}
+.faq-item:nth-child(4) .faq-btn{animation-delay:-1.8s}
+.faq-btn::after{content:"";position:absolute;inset:8% 6% 14%;border-radius:18px;background:linear-gradient(105deg,transparent 35%,#fff9 50%,transparent 65%);background-size:250% 100%;animation:brilho 3s ease-in-out infinite;pointer-events:none;mix-blend-mode:overlay}
+.faq-resp{margin:0;max-width:420px;background:var(--panel);border:3px solid var(--yellow);border-radius:14px;padding:14px 18px;color:#ece9f4;font-size:clamp(14px,1.2vw,16px);box-shadow:5px 6px 0 var(--cyan);animation:faq-abre .3s ease-out}
+@keyframes faq-abre{from{opacity:0;translate:0 -8px}}
+
 /* navegação por pontos */
 .dots{position:fixed;right:14px;top:50%;translate:0 -50%;z-index:60;display:grid;gap:12px}
 .dots a{width:14px;height:14px;border-radius:50%;background:var(--ink);border:3px solid var(--yellow);display:block;transition:transform .2s,background .2s}
@@ -145,9 +158,10 @@ html.no-anim .rg-card:hover{animation:none}
 
 @media(max-width:860px){
   .intro-grid,.contato-grid,.duas{grid-template-columns:1fr}
-  .intro-arte{max-width:380px;margin:0 auto;min-height:0}
+  .intro-arte{width:100%;max-width:380px;margin:0 auto;min-height:0}
   .criterios{grid-template-columns:repeat(2,1fr)}
   .cards{grid-template-columns:1fr;max-width:340px}
+  .faq{grid-template-columns:1fr}
   .dots{display:none}
   .f-explosao,.f-arcade{opacity:.7}
 }
@@ -159,7 +173,7 @@ html.no-anim .rg-card:hover{animation:none}
 .rg-divisor img{width:116%;margin-left:-8%;max-width:none;animation:div-sway 7s ease-in-out infinite alternate}
 @keyframes div-sway{from{translate:-2.5% 0;filter:brightness(1)}to{translate:2.5% 0;filter:brightness(1.12)}}
 html.no-anim .rg-divisor img{animation:none}
-@media(max-width:700px){.f-explosao{display:none}}
+@media(max-width:700px){.f-explosao{display:none}.som-toggle{padding:8px 10px}.som-toggle span{display:none}}
 
 /* foguetes de fundo na abertura */
 .bg-rocket{position:absolute;left:0;top:var(--y);width:var(--w);z-index:0;pointer-events:none;animation:bg-voo-d var(--t) linear forwards}

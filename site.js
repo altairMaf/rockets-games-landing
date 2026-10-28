@@ -80,7 +80,7 @@
   /* ---------- pontos laterais ---------- */
   const dots = document.createElement('nav');
   dots.className = 'dots'; dots.hidden = true; dots.setAttribute('aria-label', 'Seções');
-  const names = ['Introdução', 'Mercado', '3 motivos', 'Contato'];
+  const names = ['Introdução', 'Mercado', '3 motivos', 'Contato', 'Dúvidas'];
   screens.forEach((s, i) => {
     const a = document.createElement('a');
     a.href = '#' + s.id; a.title = names[i]; a.setAttribute('aria-label', names[i]);
@@ -156,6 +156,14 @@
 
   addEventListener('scroll', () => { if (entered) queue(); }, { passive: true });
   addEventListener('resize', () => { if (entered) queue(); });
+
+  /* ---------- dúvidas frequentes: cada botão abre/fecha a sua resposta ---------- */
+  $$('.faq-btn').forEach(b => b.addEventListener('click', () => {
+    const resp = document.getElementById(b.getAttribute('aria-controls'));
+    const abrir = resp.hidden;
+    resp.hidden = !abrir;
+    b.setAttribute('aria-expanded', String(abrir));
+  }));
 
   /* ---------- foguete (4 s, bloqueia o botão até sumir) ---------- */
   RocketKit.rocket($('#foguete'), { status: $('#foguete-status'), force: true });
