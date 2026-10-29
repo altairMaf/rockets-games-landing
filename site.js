@@ -129,6 +129,7 @@
       stops.push(RocketKit.floatScene($('#cena-intro'), opt));
       stops.push(RocketKit.floatScene($('#mercado'), opt));
       stops.push(RocketKit.coins($('#mercado'), opt));
+      stops.push(RocketKit.floatScene($('#cena-contato'), opt));
       stops.push(RocketKit.reveal($$('[data-rg-reveal]'), opt));
       queue();
     }
@@ -164,6 +165,50 @@
     resp.hidden = !abrir;
     b.setAttribute('aria-expanded', String(abrir));
   }));
+
+  /* ---------- atendente virtual: Zack responde sozinho, sempre on-line ---------- */
+  const chatJanela = $('#chat-janela'), chatAbrir = $('#chat-abrir'), chatMsgs = $('.chat-msgs');
+  const respostas = [
+    [/usad|troca|vend/, 'Sim! Avaliamos mídias físicas, consoles e periféricos usados. Chama no WhatsApp (11) 95555-6666 com fotos e o estado do produto que a gente faz uma proposta.'],
+    [/pedido|compr|pag|preço|preco|valor/, 'É fácil: escolha o produto e mande uma mensagem no WhatsApp ou nas redes. A gente confirma disponibilidade, valor e forma de pagamento.'],
+    [/fora|exterior|país|pais|internacional/, 'Por enquanto, as entregas são feitas apenas dentro do Brasil.'],
+    [/entreg|frete|envio/, 'Entregamos em todo o Brasil! Chama no WhatsApp com o seu CEP para combinar o envio.'],
+    [/devol|defeito|garantia/, 'Fale com a gente pelo WhatsApp em até 7 dias após o recebimento, com o produto na embalagem original, e orientamos o envio.'],
+    [/insta|tiktok|rede|segu/, 'Segue a gente! Instagram @pedrao_foguetao e TikTok @foguetao_games.'],
+    [/endere|onde|loja|local/, 'Estamos no Carandiru. Chama no WhatsApp antes de passar por aqui!'],
+    [/xbox|ps4|ps5|playstation|switch|nintendo|console|jogo|game/, 'Trabalhamos com mídias físicas, consoles e periféricos, novos e usados, para Xbox, PS4, PS5 e Nintendo Switch. Me diz o que procura no WhatsApp que a gente confere!'],
+    [/oi|olá|ola|eae|e aí|bom dia|boa tarde|boa noite/, 'E aí! Tô on-line pra te ajudar. Pergunta sobre pedidos, usados, entregas ou devoluções.'],
+  ];
+  function msg(texto, quem) {
+    const li = document.createElement('li');
+    li.className = quem; li.textContent = texto;
+    chatMsgs.append(li); chatMsgs.scrollTop = chatMsgs.scrollHeight;
+    return li;
+  }
+  function perguntar(texto) {
+    texto = texto.trim(); if (!texto) return;
+    msg(texto, 'eu');
+    const t = texto.toLowerCase();
+    const r = respostas.find(([re]) => re.test(t));
+    const dig = msg('Zack está digitando…', 'bot digitando');
+    setTimeout(() => {
+      dig.remove();
+      msg(r ? r[1] : 'Boa pergunta! Pra essa, o melhor é chamar no WhatsApp (11) 95555-6666 que a equipe te responde rapidinho.', 'bot');
+    }, 900);
+  }
+  function chat(abrir) {
+    chatJanela.hidden = !abrir;
+    chatAbrir.setAttribute('aria-expanded', String(abrir));
+    if (abrir) $('#chat-texto').focus(); else chatAbrir.focus();
+  }
+  chatAbrir.addEventListener('click', () => chat(chatJanela.hidden));
+  $('.chat-fechar').addEventListener('click', () => chat(false));
+  $$('.chat-sugestoes button').forEach(b => b.addEventListener('click', () => perguntar(b.textContent)));
+  $('.chat-form').addEventListener('submit', e => {
+    e.preventDefault();
+    const campo = $('#chat-texto');
+    perguntar(campo.value); campo.value = '';
+  });
 
   /* ---------- foguete (4 s, bloqueia o botão até sumir) ---------- */
   RocketKit.rocket($('#foguete'), { status: $('#foguete-status'), force: true });

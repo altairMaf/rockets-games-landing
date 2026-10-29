@@ -116,18 +116,52 @@ h2 em{font-style:normal;color:var(--yellow);-webkit-text-stroke:1px var(--ink);t
 
 /* 5) contato */
 .s-contato{background:var(--lime) url(P0/01-backgrounds/hero-lima.png) center/cover}
-.contato-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(20px,4vw,60px);align-items:center}
-.contatos{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:12px}
-.contatos li{display:flex;align-items:center;gap:12px;font-size:15px;transition:transform .25s}
-.contatos li:hover{transform:translateX(8px)}
-.contatos img{width:44px;height:44px;flex:none}
-.contatos b{color:var(--yellow);margin-right:6px}
-.contatos a{text-decoration:none}
-.contatos a:hover{text-decoration:underline;text-decoration-color:var(--cyan);text-underline-offset:4px}
+.contato-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(20px,4vw,60px);align-items:center;position:relative;z-index:1}
+.contato-painel{border-color:var(--lime);box-shadow:9px 10px 0 var(--red),9px 10px 0 4px var(--ink)}
+.contato-painel h2{font-size:clamp(32px,5vw,64px)}
+.selo{position:absolute;top:-22px;right:-14px;background:var(--red);color:#fff;font-weight:900;font-size:14px;letter-spacing:1px;padding:8px 16px;border:3px solid var(--ink);border-radius:10px;box-shadow:4px 4px 0 var(--ink);rotate:8deg;animation:selo 1.8s ease-in-out infinite}
+.selo::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--lime);margin-right:8px;vertical-align:1px;box-shadow:0 0 0 0 #9bff00aa;animation:ping 1.4s ease-out infinite}
+@keyframes selo{50%{rotate:3deg;scale:1.08}}
+@keyframes ping{to{box-shadow:0 0 0 9px #9bff0000}}
+/* contatos como cartões coloridos (todos com a animação do TikTok) */
+.contatos{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,215px),1fr));gap:14px}
+.ct{--c:var(--cyan);border:3px solid var(--ink);border-radius:16px;background:var(--c);color:var(--ink);box-shadow:5px 5px 0 var(--cyan),5px 5px 0 3px var(--ink);transition:transform .3s cubic-bezier(.3,1.6,.5,1),box-shadow .3s}
+.ct:nth-child(odd){rotate:-1.2deg}.ct:nth-child(even){rotate:1.2deg}
+.ct-in{display:flex;align-items:center;gap:10px;padding:12px;min-height:76px;text-decoration:none;color:inherit;border-radius:13px;height:100%}
+.ct:hover,.ct:focus-within{transform:translateY(-7px) scale(1.04);rotate:0deg;box-shadow:8px 10px 0 var(--red),8px 10px 0 3px var(--ink)}
+.ct-ico{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--ink);border:3px solid #fff;transition:transform .5s}
+.ct-ico img{width:26px;height:26px}
+.ct:hover .ct-ico{transform:rotate(-12deg) scale(1.12)}
+.ct-txt{min-width:0;font-weight:700;font-size:13.5px;line-height:1.3;overflow-wrap:break-word}
+.ct-txt b{display:block;font-weight:900;font-size:12px;letter-spacing:1px;text-transform:uppercase;opacity:.8}
+.ct-seta{margin-left:auto;flex:none;font-weight:900;font-size:22px;transition:transform .3s}
+.ct:hover .ct-seta{transform:translateX(5px)}
+.ct-whats{--c:#3ee06a}
+.ct-insta{--c:linear-gradient(135deg,#ffd44a,#ff4f6d 50%,#b44cff);color:#fff;text-shadow:1px 1px 0 var(--ink)}
+.ct-tiktok{--c:#fff}
+.ct-end{--c:var(--yellow)}
+.ct a:focus-visible{outline-offset:4px}
 .pend{color:#b9b4c6;font-style:normal}
-.foguete-box{display:grid;justify-items:center;gap:12px;text-align:center}
-.foguete-img{width:min(70%,320px);filter:drop-shadow(0 10px 0 #11101833);animation:rg-drift 5s ease-in-out infinite}
-#foguete{width:min(300px,80vw);font-size:clamp(16px,1.9vw,22px)}
+/* a cena flutuante do kit corta o conteúdo; aqui quem corta é a própria .screen */
+#cena-contato{overflow:visible}
+/* faixa que corre ao fundo */
+.faixa{position:absolute;left:50%;top:50%;width:150vw;translate:-50% -50%;rotate:-6deg;z-index:0;background:var(--ink);color:var(--lime);border-block:4px solid var(--yellow);font-weight:900;font-size:clamp(18px,2.4vw,30px);letter-spacing:4px;white-space:nowrap;overflow:hidden;display:flex;padding:8px 0;pointer-events:none}
+.faixa span{flex:none;padding-right:.5em;animation:faixa 30s linear infinite}
+@keyframes faixa{to{translate:-100% 0}}
+.c-moeda,.c-raio{position:absolute;z-index:2;pointer-events:none;filter:drop-shadow(3px 4px 0 var(--ink))}
+.c1{width:clamp(36px,4.4vw,66px);left:-3%;top:56%}
+.c2{width:clamp(26px,3vw,44px);right:6%;bottom:22%}
+.c-raio{width:clamp(50px,6vw,96px);left:52%;top:2%}
+/* plataforma do foguete */
+.foguete-box{display:grid;justify-items:center;gap:12px;text-align:center;position:relative}
+.foguete-chamada{margin:0;background:var(--yellow);color:var(--ink);font-weight:900;font-size:clamp(15px,1.6vw,20px);padding:6px 18px;border:3px solid var(--ink);border-radius:999px;box-shadow:4px 4px 0 var(--ink);rotate:-4deg}
+.plataforma{position:relative;width:min(100%,360px);aspect-ratio:1;display:grid;place-items:center}
+.plataforma::before{content:"";position:absolute;inset:8%;border-radius:50%;background:radial-gradient(circle,#fff 0 18%,var(--yellow) 19% 34%,var(--cyan) 35% 52%,var(--ink) 53% 56%,transparent 57%);border:4px solid var(--ink);box-shadow:6px 7px 0 var(--ink);animation:gira 14s linear infinite}
+.plataforma::after{content:"";position:absolute;inset:0;background:repeating-conic-gradient(from 0deg,#ffe60055 0 8deg,transparent 8deg 22deg);border-radius:50%;mask:radial-gradient(circle,transparent 45%,#000 46%,transparent 72%);animation:gira 30s linear infinite reverse}
+@keyframes gira{to{rotate:360deg}}
+.foguete-img{position:relative;z-index:1;width:82%;filter:drop-shadow(0 10px 0 #11101855);animation:rg-drift 5s ease-in-out infinite}
+#foguete{width:min(300px,80vw);font-size:clamp(16px,1.9vw,22px);animation:pulso 2.4s ease-in-out infinite}
+#foguete:disabled{animation:none}
 .status{min-height:1.6em;margin:0;font-weight:800;background:var(--ink);color:var(--yellow);padding:4px 14px;border-radius:999px;font-size:13px}
 .status:empty{visibility:hidden}
 .rodape small{display:block;font-weight:700;font-size:12px;margin-top:4px;opacity:.85}
@@ -146,6 +180,33 @@ h2 em{font-style:normal;color:var(--yellow);-webkit-text-stroke:1px var(--ink);t
 .faq-resp{margin:0;max-width:420px;background:var(--panel);border:3px solid var(--yellow);border-radius:14px;padding:14px 18px;color:#ece9f4;font-size:clamp(14px,1.2vw,16px);box-shadow:5px 6px 0 var(--cyan);animation:faq-abre .3s ease-out}
 @keyframes faq-abre{from{opacity:0;translate:0 -8px}}
 
+/* atendente virtual (Zack) */
+.chat{position:fixed;right:16px;bottom:16px;z-index:2147483000;display:grid;justify-items:end;gap:12px}
+.chat-avatar{flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--yellow);color:var(--ink);border:3px solid var(--ink);font-weight:900;font-size:20px;position:relative}
+.chat-avatar::after{content:"";position:absolute;right:-3px;bottom:-3px;width:12px;height:12px;border-radius:50%;background:var(--lime);border:2px solid var(--ink)}
+.chat small{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:700;opacity:.85}
+.chat small i{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 0 #9bff00aa;animation:ping 1.4s ease-out infinite}
+.chat-abrir{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;border:3px solid var(--yellow);border-radius:999px;padding:6px 18px 6px 6px;box-shadow:4px 5px 0 var(--cyan),4px 5px 0 3px var(--ink);cursor:pointer;text-align:left;transition:transform .3s cubic-bezier(.3,1.6,.5,1)}
+.chat-abrir:hover{transform:translateY(-4px) rotate(-2deg)}
+.chat-rot b{display:block;font-weight:900;font-size:14px;line-height:1.2}
+.chat-janela{width:min(340px,calc(100vw - 32px));max-height:min(480px,calc(100svh - 110px));display:flex;flex-direction:column;background:var(--panel);border:3px solid var(--yellow);border-radius:18px;box-shadow:6px 7px 0 var(--cyan),6px 7px 0 3px var(--ink);overflow:hidden;animation:faq-abre .3s ease-out}
+.chat-topo{display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--yellow);color:var(--ink);border-bottom:3px solid var(--ink)}
+.chat-topo .chat-avatar{background:var(--ink);color:var(--yellow);border-color:#fff}
+.chat-quem{flex:1;min-width:0}
+.chat-quem b{display:block;font-weight:900;font-size:16px;line-height:1.1}
+.chat-fechar{background:var(--ink);color:#fff;border:0;border-radius:50%;width:30px;height:30px;font-size:20px;line-height:1;cursor:pointer}
+.chat-msgs{list-style:none;margin:0;padding:14px 12px;display:grid;gap:8px;align-content:start;overflow-y:auto;flex:1;min-height:120px}
+.chat-msgs li{max-width:85%;padding:8px 12px;border-radius:14px;font-size:13.5px;line-height:1.4;animation:faq-abre .25s ease-out}
+.chat-msgs .bot{background:#2b2935;color:#ece9f4;border:2px solid #45424e;border-bottom-left-radius:4px;justify-self:start}
+.chat-msgs .eu{background:var(--cyan);color:var(--ink);font-weight:700;border:2px solid var(--ink);border-bottom-right-radius:4px;justify-self:end}
+.chat-msgs .digitando{color:#b9b4c6;font-style:italic}
+.chat-sugestoes{display:flex;flex-wrap:wrap;gap:6px;padding:0 12px 10px}
+.chat-sugestoes button{background:transparent;color:var(--yellow);border:2px solid var(--yellow);border-radius:999px;padding:4px 10px;font-size:12px;font-weight:800;cursor:pointer}
+.chat-sugestoes button:hover{background:var(--yellow);color:var(--ink)}
+.chat-form{display:flex;gap:8px;padding:10px 12px;border-top:2px solid #45424e}
+.chat-form input{flex:1;min-width:0;background:#fff;color:var(--ink);border:2px solid var(--ink);border-radius:999px;padding:8px 14px;font:inherit;font-size:14px}
+.chat-form button{flex:none;width:40px;height:40px;border-radius:50%;background:var(--red);color:#fff;border:2px solid var(--ink);font-size:16px;cursor:pointer}
+
 /* navegação por pontos */
 .dots{position:fixed;right:14px;top:50%;translate:0 -50%;z-index:60;display:grid;gap:12px}
 .dots a{width:14px;height:14px;border-radius:50%;background:var(--ink);border:3px solid var(--yellow);display:block;transition:transform .2s,background .2s}
@@ -155,6 +216,7 @@ h2 em{font-style:normal;color:var(--yellow);-webkit-text-stroke:1px var(--ink);t
 html.no-anim,html.no-anim *{scroll-behavior:auto!important}
 html.no-anim #conheca,html.no-anim #conheca::after,html.no-anim .foguete-img{animation:none}
 html.no-anim .rg-card:hover{animation:none}
+html.no-anim .selo,html.no-anim .selo::before,html.no-anim .faixa span,html.no-anim .plataforma::before,html.no-anim .plataforma::after,html.no-anim #foguete{animation:none}
 
 @media(max-width:860px){
   .intro-grid,.contato-grid,.duas{grid-template-columns:1fr}
@@ -164,6 +226,16 @@ html.no-anim .rg-card:hover{animation:none}
   .faq{grid-template-columns:1fr}
   .dots{display:none}
   .f-explosao,.f-arcade{opacity:.7}
+  .plataforma{width:min(70vw,280px)}
+  .c-raio{left:auto;right:2%;top:auto;bottom:30%}
+}
+@media(max-width:520px){
+  .contatos{grid-template-columns:1fr}
+  .selo{right:-6px;font-size:12px;padding:6px 12px}
+  .chat{right:12px;bottom:12px}
+  .chat-abrir{padding:4px}
+  .chat-rot{display:none}
+  .chat-janela{width:calc(100vw - 24px)}
 }
 @media(prefers-reduced-motion:reduce){html:not(.rg-explicit-motion) #conheca,html:not(.rg-explicit-motion) #conheca::after,html:not(.rg-explicit-motion) .foguete-img{animation:none}html{scroll-behavior:auto}}
 
