@@ -1,0 +1,11 @@
+/* Somente o componente de fundo; nenhuma regra global de body, botão ou rolagem. */
+.rg-faq-scene{position:relative;isolation:isolate;overflow:hidden;background:#0b0c12 url('./fundo-estatico.svg') center/cover}
+.rg-faq-scene.rg-faq-ready{background-image:radial-gradient(ellipse at 50% 43%,#090a10 0%,#101119 75%,#11121a 100%)}
+.rg-faq-layer{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden;contain:layout paint;user-select:none}
+.rg-faq-dots{position:absolute;inset:0;width:100%;height:100%}
+.rg-faq-crystal{position:absolute;display:block;width:clamp(180px,var(--rg-width),700px);height:auto;max-width:none;will-change:transform,opacity;pointer-events:none}
+.rg-faq-crystal[data-name=laranja-base]{width:var(--rg-width)}
+.rg-faq-content{position:relative;z-index:1}
+.rg-faq-sign{display:block;width:min(100%,960px);margin-inline:auto}
+.rg-faq-sign img{display:block;width:100%;height:auto}
+@media(max-width:700px){.rg-faq-crystal{width:clamp(150px,var(--rg-width),235px)}.rg-faq-crystal[data-name=lima-grande]{left:-22%!important;top:-3%!important}.rg-faq-crystal[data-name=lima-fino]{left:6%!important;top:-7%!important;width:165px}.rg-faq-crystal[data-name=ciano-esquerda]{left:-28%!important;top:23%!important}.rg-faq-crystal[data-name=ciano-direita]{right:-23%!important;top:0!important}.rg-faq-crystal[data-name=amarelo-direita]{right:-30%!important;bottom:17%!important}.rg-faq-crystal[data-name=laranja-base]{width:100%;right:-15%!important;bottom:-2%!important}.rg-faq-sign{width:min(100%,520px)}}

@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="P0/06-tipografia/fontes.css">
 <link rel="stylesheet" href="P0/09-complementos/05-movimentos/componentes.css">
 <link rel="stylesheet" href="P0/11-divisores-de-secao/divisor.css">
+<link rel="stylesheet" href="P0/12-fundo-animado-e-faq/efeito/fundo-faq.css">
 <link rel="stylesheet" href="site.css">
 </head>
 <body class="locked">
@@ -192,10 +193,17 @@
   </div>
 
   <!-- 6) DÚVIDAS FREQUENTES -->
-  <section id="duvidas" class="screen s-duvidas" aria-labelledby="t-duvidas">
+  <section id="duvidas" class="screen s-duvidas rg-faq-scene" aria-labelledby="t-duvidas">
     <div class="screen__in">
       <header class="cab" data-rg-reveal>
-        <h2 id="t-duvidas">Dúvidas Frequentes</h2>
+        <h2 id="t-duvidas">
+          <picture class="rg-faq-sign" aria-hidden="true">
+            <source media="(max-width:700px)" srcset="P0/12-fundo-animado-e-faq/placa/placa-mobile-sem-texto.svg">
+            <img src="P0/12-fundo-animado-e-faq/placa/placa-desktop-sem-texto.svg" alt="" width="1400" height="390" draggable="false">
+          </picture>
+          <span class="faq-interrogacao" aria-hidden="true">?</span>
+          <span class="faq-texto"><span>Dúvidas</span> <span>Frequentes</span></span>
+        </h2>
       </header>
       <div class="faq">
         <div class="faq-item">
@@ -248,6 +256,7 @@
 </main>
 
 <script src="P0/09-complementos/05-movimentos/componentes.js"></script>
+<script src="P0/12-fundo-animado-e-faq/efeito/fundo-faq.js"></script>
 <script src="site.js"></script>
 </body>
 </html>

@@ -1,0 +1,62 @@
+[
+  {
+    "arquivo": "lima-grande.svg",
+    "left": "-3%",
+    "top": "-8%",
+    "width": "32%",
+    "dx": 52,
+    "dy": 36,
+    "seconds": 12,
+    "delay": -3
+  },
+  {
+    "arquivo": "lima-fino.svg",
+    "left": "11%",
+    "top": "-13%",
+    "width": "25%",
+    "dx": 48,
+    "dy": 34,
+    "seconds": 14,
+    "delay": -8
+  },
+  {
+    "arquivo": "ciano-esquerda.svg",
+    "left": "-10%",
+    "top": "17%",
+    "width": "29%",
+    "dx": 61,
+    "dy": 23,
+    "seconds": 11,
+    "delay": -6
+  },
+  {
+    "arquivo": "ciano-direita.svg",
+    "right": "-7%",
+    "top": "-7%",
+    "width": "29%",
+    "dx": -24,
+    "dy": 67,
+    "seconds": 13,
+    "delay": -1
+  },
+  {
+    "arquivo": "amarelo-direita.svg",
+    "right": "-10%",
+    "bottom": "15%",
+    "width": "28%",
+    "dx": -53,
+    "dy": 42,
+    "seconds": 12.5,
+    "delay": -9
+  },
+  {
+    "arquivo": "laranja-base.svg",
+    "right": "-12%",
+    "bottom": "-15%",
+    "width": "65%",
+    "dx": -72,
+    "dy": 18,
+    "seconds": 16,
+    "delay": -4
+  }
+]

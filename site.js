@@ -116,6 +116,15 @@
     return () => { vivo = false; clearTimeout(timer); $$('.bg-rocket', cena).forEach(e => e.remove()); };
   }
 
+  /* ---------- fundo animado das dúvidas (cristais 2x + onda nas bolinhas) ---------- */
+  function fundoDuvidas(secao) {
+    const fundo = RocketFaqBackground.mount(secao, { speed: 2 });
+    // mount() põe a camada como primeiro filho; frame() só pode animar o .screen__in
+    secao.append($('.rg-faq-layer', secao));
+    fundo.play({ force: true });
+    return () => fundo.destroy();
+  }
+
   /* ---------- efeitos ---------- */
   function start() {
     stops.forEach(f => { try { f(); } catch (e) {} });
@@ -130,6 +139,7 @@
       stops.push(RocketKit.floatScene($('#mercado'), opt));
       stops.push(RocketKit.coins($('#mercado'), opt));
       stops.push(RocketKit.floatScene($('#cena-contato'), opt));
+      stops.push(fundoDuvidas($('#duvidas')));
       stops.push(RocketKit.reveal($$('[data-rg-reveal]'), opt));
       queue();
     }

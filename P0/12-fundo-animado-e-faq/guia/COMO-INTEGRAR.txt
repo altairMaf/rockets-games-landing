@@ -1,0 +1,65 @@
+ROCKET’S GAMES — FUNDO ANIMADO E PLACA FAQ
+Movimentos aprovados • 30/10/2026
+
+O QUE FOI PREPARADO
+- Seis cristais vetoriais separados, recriados a partir da composição e das cores do fundo de referência. Não são recortes idênticos dos pixels do PNG original.
+- Retícula de bolinhas desenhada em canvas, com uma onda contínua que se propaga diagonalmente. O centro permanece menos carregado para a leitura.
+- Cristais avançam no sentido das pontas. Cada ciclo usa deslocamento em uma só direção e reinicia quando o elemento está transparente; não há inversão de sentido no fim do percurso.
+- Nova placa em formato de balão de quadrinhos, com insígnia de interrogação, contorno amarelo/ciano e profundidade escura. Arquivos com e sem texto, para desktop e celular.
+- Nenhum arquivo da landing foi alterado. Esta pasta entrega componentes e uma prévia isolada.
+
+ANTES DE INTEGRAR
+Abra PREVIA-PARA-APROVACAO.html e clique em Reproduzir movimentos. Use Ver em 2× para inspecionar mais rapidamente. O sistema pode solicitar movimento reduzido; nesse caso a prévia inicia pausada e o clique é uma ativação voluntária. Os movimentos foram aprovados pelo proprietário. A placa permanece separada para uso somente no título solicitado.
+
+ESCOPO RESTRITO — ORIENTAÇÃO PRINCIPAL
+Este pacote só autoriza o efeito dos cristais/bolinhas e a placa solicitada. Não copie PREVIA-PARA-APROVACAO.html sobre a landing: ele é apenas um visor dos componentes. Preserve todas as perguntas, respostas, botões, fontes, dimensões, espaçamentos e interações existentes. Use o exemplo abaixo apenas para localizar onde conectar o efeito; não recrie a seção. Os controles Reproduzir, Pausar e 2× da prévia são de demonstração, não novos botões para adicionar à landing.
+
+ESTRUTURA (exemplo de caminhos a partir da raiz P0)
+<link rel="stylesheet" href="12-fundo-animado-e-faq/efeito/fundo-faq.css">
+
+<section id="faq" class="rg-faq-scene">
+  <div class="rg-faq-content">
+    <h2>
+      <picture class="rg-faq-sign">
+        <source media="(max-width:700px)" srcset="12-fundo-animado-e-faq/placa/placa-mobile-com-texto.svg">
+        <img src="12-fundo-animado-e-faq/placa/placa-desktop-com-texto.svg" alt="Dúvidas frequentes" width="1400" height="390">
+      </picture>
+    </h2>
+    <!-- Mantenha aqui seus botões e suas respostas já existentes. -->
+  </div>
+</section>
+
+<script src="12-fundo-animado-e-faq/efeito/fundo-faq.js"></script>
+<script>
+  const fundoFaq = RocketFaqBackground.mount(document.getElementById('faq'));
+</script>
+
+FUNDO ANTIGO
+Substitua, apenas nessa seção, a aplicação do arquivo catalogo-escuro.png pelo novo componente. Não mantenha o PNG por baixo: ele já contém cristais e bolinhas parados, e os desenhos ficariam duplicados. Remova o background-image antigo da seção, incluindo style inline, ::before ou ::after que estejam desenhando esse mesmo fundo. Preserve fundos de outras seções. O CSS deste pacote fornece o fundo estático de fallback e o substitui quando as camadas carregam.
+
+POSICIONAMENTO
+Mantenha a altura, o padding e os espaçamentos que sua seção já possui. O efeito usa as dimensões existentes, sem pedir um novo layout. Não aplique transform no contêiner do canvas. O conteúdo real fica em rg-faq-content, acima da camada decorativa. O efeito tem pointer-events:none e aria-hidden, não captura cliques, teclado, rolagem nem foco. A placa é separada do movimento: ela permanece firme para a leitura. Ao inserir a placa, limite a mudança ao título solicitado; preserve o restante do layout.
+
+CONTROLE EXISTENTE DE ANIMAÇÕES
+Conecte o botão de pausa da landing ao controlador retornado:
+fundoFaq.pause();
+fundoFaq.play();
+
+play() respeita a preferência de movimento reduzido e retorna false quando ela impede a reprodução. Use play({force:true}) somente após um clique explícito do usuário para ativar movimento. Não force no carregamento. Para consultar estado: fundoFaq.getState(). Para variar a velocidade: fundoFaq.setSpeed(0.75), fundoFaq.setSpeed(1) ou fundoFaq.setSpeed(2). Limites: 0.25 a 2.
+
+Ao desmontar a seção/trocar rota: fundoFaq.destroy(). Montar duas vezes no mesmo elemento retorna a mesma instância. A animação pausa quando a aba está oculta ou a seção sai da tela. Mudança do sistema para movimento reduzido pausa o efeito. Sem JavaScript, o CSS apresenta o SVG estático.
+
+AJUSTE DE DIREÇÕES
+Veja direcoes.json e a constante specs de efeito/fundo-faq.js.
+dx positivo = direita; negativo = esquerda. dy positivo = baixo; negativo = cima.
+Cada cristal usa seu próprio vetor, duração e fase. A velocidade é constante dentro do ciclo, com entrada e saída por opacidade. Na tela pequena a amplitude diminui para preservar espaço de leitura.
+As bolinhas usam seno/cosseno com fase diferente para cada linha e coluna, e variação discreta de tamanho. Não é uma simples translação do PNG inteiro.
+
+PLACA E TIPOGRAFIA
+placa/*-com-texto.svg: texto Dúvidas frequentes e interrogação, Montserrat incorporada.
+placa/*-sem-texto.svg: arte vazia para você colocar texto HTML acessível ou editar em ferramenta gráfica.
+Os PNGs têm transparência real e resolução 2×. Prefira SVG para nitidez. A licença da fonte está em P0/06-tipografia/OFL.txt. A tipografia continua a do kit; não há alegação de ser a fonte exata do vídeo original.
+
+CHECK DESTA VERSÃO
+Verificação visual em desktop e largura de celular. Conferência dos vetores de movimento, pausa/reprodução, troca de velocidade, carregamento de SVG/PNG e referências locais. A integração à landing real ainda precisa ser feita pelo responsável pela página e conferida no layout final.
+

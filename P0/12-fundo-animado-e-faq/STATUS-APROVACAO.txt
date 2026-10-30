@@ -1,0 +1,18 @@
+ESCOPO E APROVAÇÃO — 30/10/2026
+
+MOVIMENTOS APROVADOS PELO USUÁRIO.
+O usuário aprovou o deslocamento dos cristais e a onda das bolinhas.
+A placa solicitada permanece como arquivo separado; não foi registrada aprovação explícita de seu desenho.
+
+ALTERAÇÕES PERMITIDAS NESTE PACOTE
+1. Movimento dos cristais e das bolinhas do fundo.
+2. Placa para o texto Dúvidas frequentes, solicitada anteriormente.
+
+PRESERVAR NA LANDING
+Textos das perguntas e respostas, botões, comportamento do FAQ, fontes, espaçamentos, dimensões das seções, contatos, navegação, sons, cursor e demais imagens/elementos existentes.
+
+Não substituir a seção inteira pelo HTML de prévia.
+Não usar a prévia como novo layout da página.
+Integrar somente os arquivos do efeito e, se desejado, a placa separada.
+O HTML de prévia contém apenas os itens solicitados e os controles de demonstração.
+Nenhum arquivo da landing page foi editado por este pacote.

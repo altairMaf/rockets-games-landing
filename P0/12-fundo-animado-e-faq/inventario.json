@@ -1,0 +1,117 @@
+{
+  "status_movimentos": "aprovados",
+  "status_placa": "arquivo separado; aprovação não registrada",
+  "escopo": [
+    "movimento dos cristais",
+    "onda das bolinhas",
+    "placa Dúvidas frequentes"
+  ],
+  "preservar": "Todos os demais elementos e arquivos da landing. Não copiar o HTML da prévia como página.",
+  "arquivos": [
+    {
+      "arquivo": "cristais/amarelo-direita.svg",
+      "bytes": 1322,
+      "sha256": "06ac9cf20169c447084b899a1a4b09b5e3391891a538175bc784073daa1b14ca"
+    },
+    {
+      "arquivo": "cristais/ciano-direita.svg",
+      "bytes": 1337,
+      "sha256": "059e5842d4a57176872f34cdde0b35ac39bef6c61f1e507bdd6caa8dfc4a34fa"
+    },
+    {
+      "arquivo": "cristais/ciano-esquerda.svg",
+      "bytes": 1288,
+      "sha256": "0bac99ae1f8fc72c7580970db91cdcd4089300d6cf4c8dddd047da4328265cc2"
+    },
+    {
+      "arquivo": "cristais/laranja-base.svg",
+      "bytes": 1236,
+      "sha256": "362c612089bf30152179cef205dcb3151a6b21b6af99a1a1953b85099c4a5926"
+    },
+    {
+      "arquivo": "cristais/lima-fino.svg",
+      "bytes": 1226,
+      "sha256": "801ad357ed36f5f005ae60f6c297e1f29e8af9d3dad2d4dfa447803d67d91722"
+    },
+    {
+      "arquivo": "cristais/lima-grande.svg",
+      "bytes": 1342,
+      "sha256": "b0c684dd0403d972e29c94d3bd9c6d42b0ca5c2c1fe42c3bb351f1c6c369372f"
+    },
+    {
+      "arquivo": "efeito/fundo-estatico.svg",
+      "bytes": 124258,
+      "sha256": "7d7e7807ad2167a4b7359d6cc88feff12a84c1472e5f91414197db8b0ca777bc"
+    },
+    {
+      "arquivo": "efeito/fundo-faq.css",
+      "bytes": 1533,
+      "sha256": "97bf85d4c4adcfc5dcb3269f3629893e68d6c52a3494fd189df14bb2662f264f"
+    },
+    {
+      "arquivo": "efeito/fundo-faq.js",
+      "bytes": 5730,
+      "sha256": "59ce5edf0e27998d3f5f38f2d773608117487b1d24af518d6454e3445409faf5"
+    },
+    {
+      "arquivo": "guia/COMO-INTEGRAR.txt",
+      "bytes": 5765,
+      "sha256": "eac2cfeb9f9f1a4cad5a4b92193e037ac8795b517e2e32dd0dc7c0704e97e65f"
+    },
+    {
+      "arquivo": "guia/direcoes.json",
+      "bytes": 1068,
+      "sha256": "482958e151fd2f78b2754f454c562fd64540d9cf14915abe6b419e2225f06aa1"
+    },
+    {
+      "arquivo": "placa/placa-desktop-com-texto.png",
+      "bytes": 187296,
+      "sha256": "fe3dedaa269d7d8a2ec81592ec14dbade46912a3b0b484ff6d546915b8bedf40"
+    },
+    {
+      "arquivo": "placa/placa-desktop-com-texto.svg",
+      "bytes": 995461,
+      "sha256": "b892df84ea2cf736099a44876e85b618a16da4c7d76eeb8835d0a6aa0284c271"
+    },
+    {
+      "arquivo": "placa/placa-desktop-sem-texto.png",
+      "bytes": 157893,
+      "sha256": "aea24b0d89e1a6da8db4423d1ac411eb7165bc564b445c349469f4bc21996dd6"
+    },
+    {
+      "arquivo": "placa/placa-desktop-sem-texto.svg",
+      "bytes": 1756,
+      "sha256": "3b9faab8977fa9ece1325f481830f3de0f5665b1c956ef3092374cf49fc7cdab"
+    },
+    {
+      "arquivo": "placa/placa-mobile-com-texto.png",
+      "bytes": 176194,
+      "sha256": "0f0a7aaaee03ba753af0cb76ea42fa0b8de93fa1301bf6a96ab41d9a8dd3084d"
+    },
+    {
+      "arquivo": "placa/placa-mobile-com-texto.svg",
+      "bytes": 995633,
+      "sha256": "ed6ca08e3fd43d1c09b1cf4f3be1d5faf3f6dd1605c73bba35cb95e9dd9388be"
+    },
+    {
+      "arquivo": "placa/placa-mobile-sem-texto.png",
+      "bytes": 147031,
+      "sha256": "dc04c0f35bdc18cedc11240d06ce3048f0bd0471f9b1d09e22c3af0463568547"
+    },
+    {
+      "arquivo": "placa/placa-mobile-sem-texto.svg",
+      "bytes": 1736,
+      "sha256": "bc1ac9c1439bd08672eefcd4928bc2b604a1f5ca5f90edaeb65ed5f80dd47621"
+    },
+    {
+      "arquivo": "PREVIA-PARA-APROVACAO.html",
+      "bytes": 3858,
+      "sha256": "c1d1f26f578056632dd9cede012abd918d60f2d409a559287e1a3fc45c270923"
+    },
+    {
+      "arquivo": "STATUS-APROVACAO.txt",
+      "bytes": 967,
+      "sha256": "26aa41917938c90a3218029e1088bee05083971de3dad07c6c14130a2199a7de"
+    }
+  ]
+}

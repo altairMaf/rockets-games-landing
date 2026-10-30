@@ -168,8 +168,16 @@ h2 em{font-style:normal;color:var(--yellow);-webkit-text-stroke:1px var(--ink);t
 .rodape{margin-top:clamp(28px,6vh,60px);text-align:center;font-weight:800;font-size:13px;color:var(--ink);background:#9bffa0cc;padding:10px;border-radius:8px}
 
 /* 6) dúvidas frequentes */
-.s-duvidas{background:var(--ink) url(P0/01-backgrounds/catalogo-escuro.png) center/cover}
-.s-duvidas .cab h2{color:#fff;-webkit-text-stroke:2px var(--ink);paint-order:stroke fill;text-shadow:4px 4px 0 var(--cyan)}
+/* o fundo da seção vem do pacote P0/12 (.rg-faq-scene): cristais e bolinhas animados */
+.s-duvidas .cab h2{position:relative;isolation:isolate;container-type:inline-size;width:min(100%,960px);margin:0 auto;font-size:clamp(28px,4.4vw,56px);letter-spacing:0;animation:faq-flutua 4.2s ease-in-out infinite}
+.s-duvidas .cab h2::before{content:"";position:absolute;inset:-14% -6%;z-index:-1;border-radius:50%;background:radial-gradient(ellipse at center,#05bdedcc 0,#8a3ffc66 38%,#ffe60022 58%,transparent 72%);filter:blur(22px);animation:faq-luz 3s ease-in-out infinite}
+.s-duvidas .cab .rg-faq-sign{filter:drop-shadow(0 12px 0 #07070d66)}
+.faq-texto{position:absolute;left:18%;right:8%;top:18%;height:53%;display:flex;align-items:center;justify-content:center;gap:.28em;white-space:nowrap;font-weight:900;font-size:6cqw;line-height:1;text-transform:uppercase;letter-spacing:.01em;rotate:-2deg;-webkit-text-stroke:.14em var(--ink);paint-order:stroke fill;text-shadow:.05em .05em 0 var(--ink),.1em .1em 0 #8a3ffc}
+.faq-interrogacao{position:absolute;left:9.1%;top:42.8%;translate:-50% -50%;rotate:-8deg;font-weight:900;font-size:11cqw;line-height:1;color:var(--cyan);-webkit-text-stroke:.12em var(--ink);paint-order:stroke fill;text-shadow:.04em .04em 0 var(--ink),.08em .08em 0 #8a3ffc;pointer-events:none}
+.faq-texto span:first-child{color:var(--cyan)}
+.faq-texto span:last-child{color:#fff}
+@keyframes faq-flutua{0%,100%{translate:0 0;rotate:-.6deg}50%{translate:0 -12px;rotate:.6deg}}
+@keyframes faq-luz{0%,100%{opacity:.55;scale:.96}50%{opacity:1;scale:1.06}}
 .faq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(18px,3vw,36px);max-width:900px;margin:0 auto;align-items:start}
 .faq-item{display:grid;justify-items:center;gap:12px}
 .faq-btn{cursor:pointer;animation:pulso 2.4s ease-in-out infinite;overflow:visible}
@@ -216,6 +224,7 @@ h2 em{font-style:normal;color:var(--yellow);-webkit-text-stroke:1px var(--ink);t
 html.no-anim,html.no-anim *{scroll-behavior:auto!important}
 html.no-anim #conheca,html.no-anim #conheca::after,html.no-anim .foguete-img{animation:none}
 html.no-anim .rg-card:hover{animation:none}
+html.no-anim .s-duvidas .cab h2,html.no-anim .s-duvidas .cab h2::before{animation:none}
 html.no-anim .selo,html.no-anim .selo::before,html.no-anim .faixa span,html.no-anim .plataforma::before,html.no-anim .plataforma::after,html.no-anim #foguete{animation:none}
 
 @media(max-width:860px){
@@ -245,7 +254,10 @@ html.no-anim .selo,html.no-anim .selo::before,html.no-anim .faixa span,html.no-a
 .rg-divisor img{width:116%;margin-left:-8%;max-width:none;animation:div-sway 7s ease-in-out infinite alternate}
 @keyframes div-sway{from{translate:-2.5% 0;filter:brightness(1)}to{translate:2.5% 0;filter:brightness(1.12)}}
 html.no-anim .rg-divisor img{animation:none}
-@media(max-width:700px){.f-explosao{display:none}.som-toggle{padding:8px 10px}.som-toggle span{display:none}}
+@media(max-width:700px){.f-explosao{display:none}.som-toggle{padding:8px 10px}.som-toggle span{display:none}
+  .s-duvidas .cab h2{width:min(100%,520px)}
+  .faq-interrogacao{left:14.2%;top:41.4%;font-size:17cqw}
+  .faq-texto{left:26%;right:6%;top:12.5%;height:62%;flex-direction:column;gap:.06em;font-size:8.4cqw}}
 
 /* foguetes de fundo na abertura */
 .bg-rocket{position:absolute;left:0;top:var(--y);width:var(--w);z-index:0;pointer-events:none;animation:bg-voo-d var(--t) linear forwards}
