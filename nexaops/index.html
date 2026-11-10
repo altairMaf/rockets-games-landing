@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anúncio por foto no Mercado Livre | NexaOPS</title>
+<meta name="description" content="NexaOPS: tire a foto do produto e a IA monta o anúncio para o Mercado Livre. Plataforma em validação. Entre na lista de espera do acesso antecipado.">
+<link rel="stylesheet" href="../P0/06-tipografia/fontes.css">
+<link rel="stylesheet" href="../P0/09-complementos/05-movimentos/componentes.css">
+<link rel="stylesheet" href="../P0/11-divisores-de-secao/divisor.css">
+<link rel="stylesheet" href="../P0/12-fundo-animado-e-faq/efeito/fundo-faq.css">
+<link rel="stylesheet" href="nexa.css">
+</head>
+<body class="locked">
+
+<a class="sr-only" href="#intro">Ir para o conteúdo</a>
+
+<audio id="musica" src="../P0/10-Sons/Som de Fundo.mp3" loop preload="auto"></audio>
+<button id="som" class="som-toggle" type="button" aria-pressed="true" aria-label="Ligar ou desligar a música de fundo"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><g class="ondas" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 9a4 4 0 0 1 0 6"/><path d="M18.5 6.5a8 8 0 0 1 0 11"/></g><path class="corte" d="M4 4l16 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg><span>Música</span></button>
+
+<!-- 1) ABERTURA -->
+<section id="abertura" class="rg-float-scene" aria-label="Abertura">
+  <div class="f f-controle rg-float"><img src="../P0/03-elementos/controle-3d.png" alt="" style="--rg-drift:6.5s"></div>
+  <div class="f f-raio rg-float"><img src="../P0/03-elementos/raio-3d.png" alt="" style="--rg-drift:5s"></div>
+  <div class="f f-arcade rg-float"><img src="../P0/03-elementos/arcade-3d.png" alt="" style="--rg-drift:7.5s"></div>
+  <div class="f f-trofeu rg-float"><img src="../P0/03-elementos/trofeu-3d.png" alt="" style="--rg-drift:5.8s"></div>
+  <div class="f m m1 rg-float"><img src="../P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:4.0s"></div>
+  <div class="f m m2 rg-float"><img src="../P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:4.5s"></div>
+  <div class="f m m3 rg-float"><img src="../P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:5.0s"></div>
+  <div class="f m m4 rg-float"><img src="../P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:5.4s"></div>
+  <div class="f m m5 rg-float"><img src="../P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:5.8s"></div>
+  <div class="f m m6 rg-float"><img src="../P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:6.3s"></div>
+  <div class="f m m7 rg-float"><img src="../P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:6.8s"></div>
+  <div class="f m m8 rg-float"><img src="../P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:7.2s"></div>
+  <div class="f m m9 rg-float"><img src="../P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:7.7s"></div>
+
+  <div class="abertura-centro">
+    <p class="apoio">Plataforma de IA para marketplaces</p>
+    <div class="rg-perspective logo-stage">
+      <h1 class="logo-h1">
+        <!-- logotipo desenhado no mesmo estilo do logo do kit (camadas de contorno em 3D) -->
+        <svg id="logo" viewBox="0 0 1200 440" role="img" aria-label="NexaOPS">
+          <defs><g id="marca"><text x="600" y="190" text-anchor="middle" font-family="Montserrat,Arial Black,sans-serif" font-size="170" font-weight="900" letter-spacing="-4">NEXA</text><text x="600" y="368" text-anchor="middle" font-family="Montserrat,Arial Black,sans-serif" font-size="190" font-weight="900" letter-spacing="-2">OPS</text></g></defs>
+          <g stroke-linejoin="round" paint-order="stroke fill">
+            <use href="#marca" transform="translate(24,32)" fill="#09080e" stroke="#09080e" stroke-width="33"/>
+            <use href="#marca" transform="translate(21,28)" fill="#09080e" stroke="#09080e" stroke-width="33"/>
+            <use href="#marca" transform="translate(18,24)" fill="#09080e" stroke="#09080e" stroke-width="33"/>
+            <use href="#marca" transform="translate(15,20)" fill="#09080e" stroke="#09080e" stroke-width="33"/>
+            <use href="#marca" transform="translate(12,16)" fill="#09080e" stroke="#09080e" stroke-width="33"/>
+            <use href="#marca" transform="translate(9,12)" fill="#09080e" stroke="#09080e" stroke-width="33"/>
+            <use href="#marca" transform="translate(6,8)" fill="#09080e" stroke="#09080e" stroke-width="33"/>
+            <use href="#marca" transform="translate(3,4)" fill="#09080e" stroke="#09080e" stroke-width="33"/>
+            <use href="#marca" stroke="#ffe600" stroke-width="30" fill="#ffe600"/>
+            <use href="#marca" stroke="#111018" stroke-width="11" fill="#ff3038"/>
+          </g>
+        </svg>
+      </h1>
+    </div>
+    <button id="conheca" type="button" class="rg-action btn-img btn-amarelo" aria-label="Conheça a NexaOPS"><span class="rotulo">Conheça-nos</span></button>
+  </div>
+</section>
+
+<!-- LANDING -->
+<main id="site" hidden>
+
+  <!-- 2) PRIMEIRA DOBRA -->
+  <section id="intro" class="screen s-intro" aria-labelledby="t-intro">
+    <div class="screen__in rg-float-scene" id="cena-intro">
+      <div class="intro-grid">
+        <div class="painel painel-escuro" data-rg-reveal>
+          <span class="selo selo-beta" aria-hidden="true">ACESSO ANTECIPADO</span>
+          <p class="eyebrow">CADASTRO POR FOTO NO MERCADO LIVRE</p>
+          <h2 id="t-intro" tabindex="-1">Tire a foto. O anúncio sai <em>pronto.</em></h2>
+          <p>A NexaOPS lê a foto do produto, identifica o que ele é e monta o anúncio para o Mercado Livre: título, descrição, categoria e atributos. Você confere e publica, sem digitar ficha de produto.</p>
+          <p>Começamos por quem anuncia jogos de videogame em mídia física. A plataforma ainda está em validação: entre na lista de espera para testar primeiro.</p>
+          <ul class="chips" aria-label="O que a IA identifica na foto">
+            <li><img src="../P0/09-complementos/02-icones/midia.svg" alt="">Nome do jogo</li>
+            <li><img src="../P0/09-complementos/02-icones/console.svg" alt="">Plataforma</li>
+            <li><img src="../P0/09-complementos/02-icones/estrela.svg" alt="">Edição</li>
+            <li><img src="../P0/09-complementos/02-icones/check.svg" alt="">Estado de conservação</li>
+          </ul>
+          <div class="botoes">
+            <a href="#lista" class="rg-action btn-img btn-amarelo go"><span class="rotulo">Entrar na lista de espera</span></a>
+            <a href="#como" class="rg-action btn-img btn-azul go"><span class="rotulo">Ver como funciona</span></a>
+          </div>
+          <p class="linha-apoio">Acesso antecipado limitado <b>★</b> Sem cartão de crédito <b>★</b> Entrada gratuita</p>
+        </div>
+        <div class="intro-arte">
+          <div class="rg-float a1"><img src="../P0/09-complementos/04-ilustracoes/midias-fisicas.png" alt="Ilustração de mídias físicas de jogos" style="--rg-drift:6s"></div>
+          <div class="rg-float a2"><img src="../P0/03-elementos/raio-3d.png" alt="" style="--rg-drift:4.4s"></div>
+          <div class="rg-float a3"><img src="../P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:5.2s"></div>
+          <div class="anuncio-mock" aria-hidden="true">
+            <span class="mock-tag">ANÚNCIO GERADO</span>
+            <b>Título</b><i></i>
+            <b>Categoria</b><i class="curta"></i>
+            <b>Atributos</b><i></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rg-divisor" aria-hidden="true">
+    <picture>
+      <source media="(max-width:700px)" srcset="../P0/11-divisores-de-secao/divisor-comics-mobile.svg">
+      <img src="../P0/11-divisores-de-secao/divisor-comics-desktop.svg" alt="" width="1920" height="220" draggable="false">
+    </picture>
+  </div>
+
+  <!-- 3) PROBLEMA + O QUE A PLATAFORMA FAZ -->
+  <section id="plataforma" class="screen s-mercado" aria-labelledby="t-plataforma">
+    <div class="screen__in" id="cena-plataforma">
+      <div class="painel painel-escuro largo" data-rg-reveal>
+        <p class="eyebrow">O TRABALHO POR TRÁS DA VITRINE</p>
+        <h2 id="t-plataforma">Vender em marketplace também é <em>operar.</em></h2>
+        <div class="duas">
+          <div>
+            <p>Cadastrar produtos, manter estoque e preço iguais em todos os canais, responder clientes, acompanhar concorrentes e corrigir anúncios. É trabalho repetitivo que toma o tempo de quem deveria estar cuidando do negócio.</p>
+            <p>Os hubs de integração sincronizam dados entre sistemas, mas alguém ainda precisa cadastrar, decidir preço e responder. A NexaOPS quer que agentes de IA façam essas tarefas e que você supervisione, em vez de operar.</p>
+          </div>
+          <div class="arte-midias rg-float"><img src="../P0/09-complementos/04-ilustracoes/consoles-e-perifericos.png" alt="Ilustração de consoles e periféricos" style="--rg-drift:6s"></div>
+        </div>
+        <p class="eyebrow sub">O QUE A PLATAFORMA VAI FAZER</p>
+        <ul class="criterios frentes" aria-label="Frentes da plataforma e estágio de cada uma">
+          <li class="ativa"><span class="estagio">Primeiro no acesso antecipado</span><img src="../P0/09-complementos/02-icones/midia.svg" alt=""><b>Cadastro por foto</b><span>A IA lê a foto e monta título, descrição, categoria e atributos do anúncio.</span></li>
+          <li><span class="estagio">No roadmap</span><img src="../P0/09-complementos/02-icones/relogio.svg" alt=""><b>Sincronização</b><span>Estoque, pedidos e preços iguais entre canais e o ERP.</span></li>
+          <li><span class="estagio">No roadmap</span><img src="../P0/09-complementos/02-icones/estrela.svg" alt=""><b>Preço inteligente</b><span>Monitora concorrentes e reprecifica sem passar da sua margem mínima.</span></li>
+          <li><span class="estagio">No roadmap</span><img src="../P0/09-complementos/02-icones/whatsapp.svg" alt=""><b>Atendimento por IA</b><span>Respostas no WhatsApp e nos marketplaces, com pós-venda e reclamações.</span></li>
+          <li><span class="estagio">No roadmap</span><img src="../P0/09-complementos/02-icones/check.svg" alt=""><b>Alertas e previsão</b><span>Painel com métricas, risco de ruptura e sugestão de reposição.</span></li>
+          <li><span class="estagio">No roadmap</span><img src="../P0/09-complementos/02-icones/chat.svg" alt=""><b>Plataforma aberta</b><span>Agentes personalizados e API para integrar fluxos da sua operação.</span></li>
+        </ul>
+        <p class="destaque"><span>Mais do que integrar. Executar.</span></p>
+        <p class="nota">Só o cadastro por foto no Mercado Livre faz parte da primeira fase. As demais frentes estão no roadmap e podem mudar durante a validação com vendedores.</p>
+        <a href="#lista" class="rg-action btn-img btn-amarelo go"><span class="rotulo">Entrar na lista de espera</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="rg-divisor" aria-hidden="true">
+    <picture>
+      <source media="(max-width:700px)" srcset="../P0/11-divisores-de-secao/02-mercado-para-motivos/divisor-mobile.svg">
+      <img src="../P0/11-divisores-de-secao/02-mercado-para-motivos/divisor-desktop.svg" alt="" width="1920" height="220" draggable="false">
+    </picture>
+  </div>
+
+  <!-- 4) COMO FUNCIONA -->
+  <section id="como" class="screen s-motivos" aria-labelledby="t-como">
+    <div class="screen__in">
+      <header class="cab" data-rg-reveal>
+        <p class="eyebrow claro">DA FOTO AO ANÚNCIO</p>
+        <h2 id="t-como">Como funciona em <em>3 passos</em></h2>
+      </header>
+      <div class="cards">
+        <div class="slot" data-rg-reveal style="transition-delay:.05s"><article class="rg-card card">
+          <img class="num" src="../P0/09-complementos/03-interface/circulo-1.svg" alt="Passo 1">
+          <img class="ico" src="../P0/09-complementos/02-icones/check.svg" alt="">
+          <h3>Autorize sua loja</h3>
+          <p>Você conecta sua conta na página oficial do Mercado Livre. Sua senha fica com você: a NexaOPS recebe só uma chave de acesso que você revoga quando quiser.</p>
+        </article></div>
+        <div class="slot" data-rg-reveal style="transition-delay:.2s"><article class="rg-card card">
+          <img class="num" src="../P0/09-complementos/03-interface/circulo-2.svg" alt="Passo 2">
+          <img class="ico" src="../P0/09-complementos/02-icones/midia.svg" alt="">
+          <h3>Mande a foto</h3>
+          <p>Fotografe o produto. A IA identifica nome, plataforma, edição e estado de conservação e preenche o que a categoria pede.</p>
+        </article></div>
+        <div class="slot" data-rg-reveal style="transition-delay:.35s"><article class="rg-card card">
+          <img class="num" src="../P0/09-complementos/03-interface/circulo-3.svg" alt="Passo 3">
+          <img class="ico" src="../P0/09-complementos/02-icones/seta-direita.svg" alt="">
+          <h3>Confira e publique</h3>
+          <p>O anúncio chega pronto para você revisar. Aprovado, ele é publicado na sua conta do Mercado Livre.</p>
+        </article></div>
+      </div>
+      <div class="cta-centro" data-rg-reveal>
+        <a href="#lista" class="rg-action btn-img btn-vermelho go"><span class="rotulo">Entrar na lista de espera</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="rg-divisor" aria-hidden="true">
+    <picture>
+      <source media="(max-width:700px)" srcset="../P0/11-divisores-de-secao/03-motivos-para-contatos/divisor-mobile.svg">
+      <img src="../P0/11-divisores-de-secao/03-motivos-para-contatos/divisor-desktop.svg" alt="" width="1920" height="220" draggable="false">
+    </picture>
+  </div>
+
+  <!-- 5) LISTA DE ESPERA -->
+  <section id="lista" class="screen s-contato" aria-labelledby="t-lista">
+    <div class="screen__in rg-float-scene" id="cena-lista">
+      <div class="faixa" aria-hidden="true"><span>LISTA DE ESPERA ★ ACESSO ANTECIPADO ★ ENTRADA GRATUITA ★ LISTA DE ESPERA ★ ACESSO ANTECIPADO ★ ENTRADA GRATUITA ★ </span><span>LISTA DE ESPERA ★ ACESSO ANTECIPADO ★ ENTRADA GRATUITA ★ LISTA DE ESPERA ★ ACESSO ANTECIPADO ★ ENTRADA GRATUITA ★ </span></div>
+      <div class="rg-float c-moeda c1" aria-hidden="true"><img src="../P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:4.6s"></div>
+      <div class="rg-float c-moeda c2" aria-hidden="true"><img src="../P0/03-elementos/moeda-estrela.png" alt="" style="--rg-drift:5.6s"></div>
+      <div class="rg-float c-raio" aria-hidden="true"><img src="../P0/03-elementos/raio-3d.png" alt="" style="--rg-drift:5s"></div>
+      <div class="contato-grid">
+        <div class="painel painel-escuro contato-painel" data-rg-reveal>
+          <span class="selo" aria-hidden="true">VAGAS LIMITADAS</span>
+          <p class="eyebrow">SEJA UM DOS PRIMEIROS</p>
+          <h2 id="t-lista">Entre na <em>lista de espera</em></h2>
+          <p>Conte um pouco da sua operação. Usamos essas respostas para decidir quem entra primeiro no acesso antecipado.</p>
+          <form id="form-lista" class="form" novalidate>
+            <div class="campo"><label for="f-nome">Nome *</label><input id="f-nome" name="nome" type="text" autocomplete="name" required></div>
+            <div class="campo"><label for="f-email">E-mail *</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="campo"><label for="f-whats">WhatsApp *</label><input id="f-whats" name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" placeholder="(11) 90000-0000" required></div>
+            <div class="campo"><label for="f-skus">Quantos anúncios você tem? *</label>
+              <select id="f-skus" name="skus" required>
+                <option value="">Escolha</option><option>Até 50</option><option>51 a 500</option><option>501 a 2.000</option><option>Mais de 2.000</option>
+              </select></div>
+            <fieldset class="campo largo marcas" id="f-canais">
+              <legend>Onde você vende? *</legend>
+              <label><input type="checkbox" name="canais" value="Mercado Livre">Mercado Livre</label>
+              <label><input type="checkbox" name="canais" value="Shopee">Shopee</label>
+              <label><input type="checkbox" name="canais" value="Amazon">Amazon</label>
+              <label><input type="checkbox" name="canais" value="Magalu">Magalu</label>
+              <label><input type="checkbox" name="canais" value="Outros">Outros</label>
+            </fieldset>
+            <div class="campo"><label for="f-erp">Usa algum ERP? Qual? *</label><input id="f-erp" name="erp" type="text" placeholder="Ex.: Bling, nenhum" required></div>
+            <div class="campo"><label for="f-dor">Sua maior dor hoje *</label>
+              <select id="f-dor" name="dor" required>
+                <option value="">Escolha</option><option>Cadastrar produtos</option><option>Manter estoque e preço sincronizados</option><option>Acompanhar preço dos concorrentes</option><option>Responder clientes</option><option>Outra</option>
+              </select></div>
+            <div class="campo"><label for="f-empresa">Nome da empresa <small>(opcional)</small></label><input id="f-empresa" name="empresa" type="text" autocomplete="organization"></div>
+            <div class="campo"><label for="f-origem">Como conheceu a NexaOPS? <small>(opcional)</small></label><input id="f-origem" name="origem" type="text"></div>
+            <p class="consentimento largo">Ao enviar, você concorda em ser contatado para receber informações sobre o acesso antecipado e novidades do produto.</p>
+            <div class="largo enviar">
+              <button type="submit" class="rg-action btn-img btn-vermelho"><span class="rotulo">Quero acesso antecipado</span></button>
+              <p id="form-status" class="status" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+        <div class="foguete-box" data-rg-reveal>
+          <p class="foguete-chamada" aria-hidden="true">Aperte e veja!</p>
+          <div class="plataforma">
+            <img class="foguete-img" src="../P0/09-complementos/04-ilustracoes/foguete-direita.png" alt="" aria-hidden="true">
+          </div>
+          <button id="foguete" type="button" class="rg-action btn-img btn-vermelho" aria-label="Lançar um foguete decorativo por 4 segundos">Lançar foguete</button>
+          <p id="foguete-status" role="status" aria-live="polite" class="status"></p>
+        </div>
+      </div>
+      <footer class="rodape">NexaOPS — da foto ao anúncio, com menos trabalho manual.<small>A disponibilidade das funcionalidades descritas depende do estágio de desenvolvimento do produto e pode mudar durante a validação e o acesso antecipado. Página criada para fins didáticos.</small></footer>
+    </div>
+  </section>
+
+  <div class="rg-divisor" aria-hidden="true">
+    <picture>
+      <source media="(max-width:700px)" srcset="../P0/11-divisores-de-secao/divisor-comics-mobile.svg">
+      <img src="../P0/11-divisores-de-secao/divisor-comics-desktop.svg" alt="" width="1920" height="220" draggable="false">
+    </picture>
+  </div>
+
+  <!-- 6) DÚVIDAS FREQUENTES -->
+  <section id="duvidas" class="screen s-duvidas rg-faq-scene" aria-labelledby="t-duvidas">
+    <div class="screen__in">
+      <header class="cab" data-rg-reveal>
+        <h2 id="t-duvidas">
+          <picture class="rg-faq-sign" aria-hidden="true">
+            <source media="(max-width:700px)" srcset="../P0/12-fundo-animado-e-faq/placa/placa-mobile-sem-texto.svg">
+            <img src="../P0/12-fundo-animado-e-faq/placa/placa-desktop-sem-texto.svg" alt="" width="1400" height="390" draggable="false">
+          </picture>
+          <span class="faq-interrogacao" aria-hidden="true">?</span>
+          <span class="faq-texto"><span>Dúvidas</span> <span>Frequentes</span></span>
+        </h2>
+      </header>
+      <div class="faq">
+        <div class="faq-item">
+          <button type="button" class="rg-action btn-img btn-amarelo faq-btn" aria-expanded="false" aria-controls="r-disponivel"><span class="rotulo">Já está disponível?</span></button>
+          <p id="r-disponivel" class="faq-resp" hidden>Ainda não. A NexaOPS está em validação. Quem entra na lista de espera é chamado primeiro, conforme as funcionalidades forem liberadas.</p>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="rg-action btn-img btn-azul faq-btn" aria-expanded="false" aria-controls="r-senha"><span class="rotulo">Preciso dar minha senha?</span></button>
+          <p id="r-senha" class="faq-resp" hidden>Não. Você autoriza a NexaOPS na página oficial do Mercado Livre, como no botão “Entrar com Google”. Recebemos só uma chave de acesso, que você pode revogar com um clique.</p>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="rg-action btn-img btn-vermelho faq-btn" aria-expanded="false" aria-controls="r-canais"><span class="rotulo">Quais marketplaces?</span></button>
+          <p id="r-canais" class="faq-resp" hidden>A primeira fase é o Mercado Livre. Shopee, Amazon e Magalu estão no plano das próximas fases.</p>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="rg-action btn-img btn-amarelo faq-btn" aria-expanded="false" aria-controls="r-bling"><span class="rotulo">Preciso ter Bling?</span></button>
+          <p id="r-bling" class="faq-resp" hidden>O Bling é o primeiro ERP previsto no roadmap. Outras integrações dependem da demanda dos vendedores.</p>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="rg-action btn-img btn-azul faq-btn" aria-expanded="false" aria-controls="r-humano"><span class="rotulo">A IA faz tudo sozinha?</span></button>
+          <p id="r-humano" class="faq-resp" hidden>Não. A IA cuida do trabalho repetitivo e você supervisiona: confere o anúncio antes de publicar e decide os casos que pedem uma pessoa.</p>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="rg-action btn-img btn-vermelho faq-btn" aria-expanded="false" aria-controls="r-custo"><span class="rotulo">Custa para entrar?</span></button>
+          <p id="r-custo" class="faq-resp" hidden>Não. A lista de espera é gratuita e não pede cartão. Os planos serão apresentados quando o acesso for liberado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASSISTENTE VIRTUAL (respostas automáticas) -->
+  <aside class="chat" aria-label="Assistente virtual">
+    <div id="chat-janela" class="chat-janela" hidden>
+      <header class="chat-topo">
+        <span class="chat-avatar" aria-hidden="true">N</span>
+        <span class="chat-quem"><b>Nexa</b><small><i></i>Online agora · assistente virtual</small></span>
+        <button type="button" class="chat-fechar" aria-label="Fechar o chat">×</button>
+      </header>
+      <ol class="chat-msgs" aria-live="polite">
+        <li class="bot">Oi! Eu sou a Nexa, assistente virtual da NexaOPS. Quer saber como funciona o cadastro por foto?</li>
+      </ol>
+      <div class="chat-sugestoes">
+        <button type="button">Como funciona?</button>
+        <button type="button">Preciso dar minha senha?</button>
+        <button type="button">Quanto custa?</button>
+      </div>
+      <form class="chat-form">
+        <label class="sr-only" for="chat-texto">Sua mensagem</label>
+        <input id="chat-texto" type="text" autocomplete="off" placeholder="Digite sua dúvida…">
+        <button type="submit" aria-label="Enviar mensagem">➤</button>
+      </form>
+    </div>
+    <button id="chat-abrir" class="chat-abrir" type="button" aria-expanded="false" aria-controls="chat-janela">
+      <span class="chat-avatar" aria-hidden="true">N</span>
+      <span class="chat-rot"><b>Dúvidas? Fale com a Nexa</b><small><i></i>Online</small></span>
+    </button>
+  </aside>
+</main>
+
+<script src="../P0/09-complementos/05-movimentos/componentes.js"></script>
+<script src="../P0/12-fundo-animado-e-faq/efeito/fundo-faq.js"></script>
+<script src="nexa.js"></script>
+</body>
+</html>
